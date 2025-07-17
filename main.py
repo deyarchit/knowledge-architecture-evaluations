@@ -1,9 +1,9 @@
-from data.loader import process_ap_history_data
+from evaluator.basic import ap_history_evaluation
 
 
 def main():
     print("Hello from knowledge-evaluations!")
-    process_ap_history_data()
+    ap_history_evaluation()
 
 
 if __name__ == "__main__":

@@ -4,11 +4,18 @@ from typing import List
 
 from pypdf import PdfReader
 
-from models.qa import QuestionAnswer, QuestionAnswerSet
+from models.qa import QA, QASet
+
+output_json = "data/processed/ap_history_qa.json"
+
+
+def load_ap_history_qa_set() -> QASet:
+    output_file = Path(output_json)
+    existing_qa = QASet.model_validate_json(output_file.read_text(encoding="utf-8"))
+    return existing_qa
 
 
 def process_ap_history_data():
-    output_json = "data/processed/ap_history_qa.json"
     input_pdfs = [
         "data/raw/MC_1450-1750.pdf",
         "data/raw/MC_600-1450.pdf",
@@ -20,12 +27,12 @@ def process_ap_history_data():
 
 def process_raw_data(pdf_path: str, output_json_path: str):
     reader = PdfReader(pdf_path)
-    qa_set: List[QuestionAnswer] = []
+    qa_set: List[QA] = []
 
     for idx, page in enumerate(reader.pages[1:]):
         text = page.extract_text()
         if idx % 2 == 0:
-            qa_set.append(QuestionAnswer(question=_cleanup_text(text), answer=""))
+            qa_set.append(QA(question=_cleanup_text(text), answer=""))
         else:
             qa_set[-1].answer = _extract_answer_option(text)
 
@@ -34,7 +41,7 @@ def process_raw_data(pdf_path: str, output_json_path: str):
 
     try:
         existing_qa = (
-            QuestionAnswerSet.model_validate_json(output_file.read_text(encoding="utf-8"))
+            QASet.model_validate_json(output_file.read_text(encoding="utf-8"))
             if output_file.exists()
             else None
         )
@@ -43,7 +50,7 @@ def process_raw_data(pdf_path: str, output_json_path: str):
         existing_qa = None
 
     combined_qa = (existing_qa.qa_set if existing_qa else []) + qa_set
-    final_qa_set = QuestionAnswerSet(qa_set=combined_qa)
+    final_qa_set = QASet(qa_set=combined_qa)
 
     try:
         output_file.write_text(
