@@ -2,7 +2,7 @@
   "qa_map": {
     "0": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "1": {
       "question": "",
@@ -10,7 +10,7 @@
     },
     "2": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "3": {
       "question": "",
@@ -22,15 +22,15 @@
     },
     "5": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "6": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "7": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "8": {
       "question": "",
@@ -38,11 +38,11 @@
     },
     "9": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "10": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "11": {
       "question": "",
@@ -50,15 +50,15 @@
     },
     "12": {
       "question": "",
-      "answer": "E"
+      "answer": "C"
     },
     "13": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "14": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "15": {
       "question": "",
@@ -66,7 +66,7 @@
     },
     "16": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "17": {
       "question": "",
@@ -82,19 +82,19 @@
     },
     "20": {
       "question": "",
-      "answer": "A"
+      "answer": "D"
     },
     "21": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "22": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "23": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "24": {
       "question": "",
@@ -102,7 +102,7 @@
     },
     "25": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "26": {
       "question": "",
@@ -110,7 +110,7 @@
     },
     "27": {
       "question": "",
-      "answer": "C"
+      "answer": "D"
     },
     "28": {
       "question": "",
@@ -122,19 +122,19 @@
     },
     "30": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "31": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "32": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "33": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "34": {
       "question": "",
@@ -142,7 +142,7 @@
     },
     "35": {
       "question": "",
-      "answer": "E"
+      "answer": "D"
     },
     "36": {
       "question": "",
@@ -154,7 +154,7 @@
     },
     "38": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "39": {
       "question": "",
@@ -166,23 +166,23 @@
     },
     "41": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "42": {
       "question": "",
-      "answer": "C"
+      "answer": "E"
     },
     "43": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "44": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "45": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "46": {
       "question": "",
@@ -190,11 +190,11 @@
     },
     "47": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "48": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "49": {
       "question": "",
@@ -202,15 +202,15 @@
     },
     "50": {
       "question": "",
-      "answer": "B"
+      "answer": "D"
     },
     "51": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "52": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "53": {
       "question": "",
@@ -218,7 +218,7 @@
     },
     "54": {
       "question": "",
-      "answer": "C"
+      "answer": "D"
     },
     "55": {
       "question": "",
@@ -226,23 +226,23 @@
     },
     "56": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "57": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "58": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "59": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "60": {
       "question": "",
-      "answer": "A"
+      "answer": "C"
     },
     "61": {
       "question": "",
@@ -254,15 +254,15 @@
     },
     "63": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "64": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "65": {
       "question": "",
-      "answer": "E"
+      "answer": "C"
     },
     "66": {
       "question": "",
@@ -274,15 +274,15 @@
     },
     "68": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "69": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "70": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "71": {
       "question": "",
@@ -294,19 +294,19 @@
     },
     "73": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "74": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "75": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "76": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "77": {
       "question": "",
@@ -330,11 +330,11 @@
     },
     "82": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "83": {
       "question": "",
-      "answer": "A"
+      "answer": "C"
     },
     "84": {
       "question": "",
@@ -342,11 +342,11 @@
     },
     "85": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "86": {
       "question": "",
-      "answer": "A"
+      "answer": "C"
     },
     "87": {
       "question": "",
@@ -358,35 +358,35 @@
     },
     "89": {
       "question": "",
-      "answer": "A"
+      "answer": "C"
     },
     "90": {
       "question": "",
-      "answer": "B"
+      "answer": "D"
     },
     "91": {
       "question": "",
-      "answer": "E"
+      "answer": "C"
     },
     "92": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "93": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "94": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "95": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "96": {
       "question": "",
-      "answer": "A"
+      "answer": "D"
     },
     "97": {
       "question": "",
@@ -394,19 +394,19 @@
     },
     "98": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "99": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "100": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "101": {
       "question": "",
-      "answer": "D"
+      "answer": "A"
     },
     "102": {
       "question": "",
@@ -418,11 +418,11 @@
     },
     "104": {
       "question": "",
-      "answer": "D"
+      "answer": "CITIES SERVED THE NEEDS OF THEIR INHABITANTS AND IMMEDIATE NEIGHBORS"
     },
     "105": {
       "question": "",
-      "answer": "D"
+      "answer": "B"
     },
     "106": {
       "question": "",
@@ -434,11 +434,11 @@
     },
     "108": {
       "question": "",
-      "answer": "A"
+      "answer": "C"
     },
     "109": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "110": {
       "question": "",
@@ -446,19 +446,19 @@
     },
     "111": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "112": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "113": {
       "question": "",
-      "answer": "A"
+      "answer": "C"
     },
     "114": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "115": {
       "question": "",
@@ -466,31 +466,31 @@
     },
     "116": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "117": {
       "question": "",
-      "answer": "C"
+      "answer": "INDO-EUROPEAN"
     },
     "118": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "119": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "120": {
       "question": "",
-      "answer": "E"
+      "answer": "D"
     },
     "121": {
       "question": "",
-      "answer": "C"
+      "answer": "D"
     },
     "122": {
       "question": "",
-      "answer": "C"
+      "answer": "A"
     },
     "123": {
       "question": "",
@@ -506,11 +506,11 @@
     },
     "126": {
       "question": "",
-      "answer": "E"
+      "answer": "A"
     },
     "127": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "128": {
       "question": "",
@@ -518,19 +518,19 @@
     },
     "129": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "130": {
       "question": "",
-      "answer": "E"
+      "answer": "C"
     },
     "131": {
       "question": "",
-      "answer": "B"
+      "answer": "C"
     },
     "132": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     },
     "133": {
       "question": "",
@@ -542,27 +542,27 @@
     },
     "135": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "136": {
       "question": "",
-      "answer": "B"
+      "answer": "A"
     },
     "137": {
       "question": "",
-      "answer": "C"
+      "answer": "B"
     },
     "138": {
       "question": "",
-      "answer": "E"
+      "answer": "B"
     },
     "139": {
       "question": "",
-      "answer": "E"
+      "answer": "C"
     },
     "140": {
       "question": "",
-      "answer": "D"
+      "answer": "C"
     },
     "141": {
       "question": "",
@@ -574,7 +574,7 @@
     },
     "143": {
       "question": "",
-      "answer": "A"
+      "answer": "B"
     }
   }
 }

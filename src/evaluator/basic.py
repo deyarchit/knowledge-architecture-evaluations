@@ -21,6 +21,8 @@ def ap_history_pre_process_data():
 
 
 def ap_history_evaluation(model_name: str, max_questions: Optional[int] = None):
+    model_name_str = get_normalized_model_name(model_name)
+    print(f"Starting evaluation for model: {model_name_str}")
     # Load the processed data
     qa_collection: QACollection = load_ap_history_qa_set()
     qa_set = qa_collection.qa_map
@@ -28,26 +30,34 @@ def ap_history_evaluation(model_name: str, max_questions: Optional[int] = None):
     # Init llm
     gen = LLMAnswerGenerator(model_name, system_prompt)
 
-    # Collection to store model outputs
+    # Path for output file
+    output_file = get_data_path(f"{eval_dir}/{model_name_str}.json")
+
     model_response_set: Dict[int, QA] = defaultdict(default_qa)
+    # Load existing responses if any
+    if output_file.exists():
+        existing_collection = read_json_from_file(output_file, QACollection)
+        if existing_collection:
+            model_response_set = existing_collection.qa_map
 
-    # Get the total number of items evaluated
-    if max_questions:
-        total_evaluated_questions = max_questions
-    else:
-        total_evaluated_questions = len(qa_set)
+    # Determine total number of questions to evaluate
+    total_evaluated_questions = max_questions or len(qa_set)
 
-    # Capture responses
+    # Capture responses for unanswered questions
     for q_number in islice(qa_set, total_evaluated_questions):
+        if (
+            q_number in model_response_set and model_response_set[q_number].answer != ""
+        ):  # Skip if already answered
+            continue
+
         qa = qa_set[q_number]
         response = gen.generate(qa.question)
-        model_response_set[q_number].answer = response.answer.upper()
+        model_response_set[q_number] = QA(question="", answer=response.answer.upper())
 
-    output_file = get_data_path(f"{eval_dir}/{get_normalized_model_name(model_name)}.json")
-
-    model_response_collection: QACollection = QACollection(qa_map=model_response_set)
+    # Save updated response set
+    model_response_collection = QACollection(qa_map=model_response_set)
     if write_json_to_file(output_file, model_response_collection):
-        print("Eval completed")
+        print(f"Eval completed for model: {model_name_str}")
 
 
 def get_normalized_model_name(model_name: str) -> str:
