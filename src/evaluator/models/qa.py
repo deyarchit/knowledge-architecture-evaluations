@@ -8,5 +8,9 @@ class QA(BaseModel):
     answer: str = Field(..., description="The answer to the question")
 
 
+def default_qa():
+    return QA(question="", answer="")
+
+
 class QACollection(BaseModel):
     qa_map: Dict[int, QA]

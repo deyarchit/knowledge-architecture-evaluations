@@ -1,49 +1,103 @@
+from collections import defaultdict
 from itertools import islice
-from typing import Optional
+from pathlib import Path
+from typing import Dict, Optional
 
 from litellm import CustomStreamWrapper, completion
 from litellm.types.utils import StreamingChoices
 from ratelimit import limits, sleep_and_retry
 
-from evaluator.loader import load_ap_history_qa_set, process_ap_history_data
+from evaluator.loader import (
+    load_ap_history_qa_set,
+    process_ap_history_data,
+    read_json_from_file,
+    write_json_to_file,
+)
 from evaluator.models.llm import LLMResponse
-from evaluator.models.qa import QACollection
+from evaluator.models.qa import QA, QACollection, default_qa
+from evaluator.utils import get_data_path
+
+eval_dir = Path("evals/basic")
 
 
-def ap_history_evaluation(max_questions: Optional[int] = None):
-    # This is only needed once
+def ap_history_pre_process_data():
     process_ap_history_data()
 
+
+def ap_history_evaluation(model_name: str, max_questions: Optional[int] = None):
     # Load the processed data
     qa_collection: QACollection = load_ap_history_qa_set()
     qa_set = qa_collection.qa_map
+
+    # Collection to store model outputs
+    model_response_set: Dict[int, QA] = defaultdict(default_qa)
 
     # Get the total number of items evaluated
     if max_questions:
         total_evaluated_questions = max_questions
     else:
         total_evaluated_questions = len(qa_set)
-    incorrect_answers = 0
 
-    for qa_number in islice(qa_set, max_questions):
-        qa = qa_set[qa_number]
-        response = generate_answer(qa.question)
-        if response.answer.upper() != qa.answer.upper():
-            print(
-                f"Incorrect answer: LLM Response: {response.answer.upper()} Correct Response: {qa.answer.upper()}"
-            )
-            incorrect_answers += 1
+    # Capture responses
+    for q_number in islice(qa_set, total_evaluated_questions):
+        qa = qa_set[q_number]
+        response = generate_answer(model_name, qa.question)
+        model_response_set[q_number].answer = response.answer.upper()
 
-    pass_percentage = (total_evaluated_questions - incorrect_answers) / total_evaluated_questions
-    print(f"Total Questions: {total_evaluated_questions} Pass Percentage: {pass_percentage:.2%}")
+    output_file = get_data_path(f"{eval_dir}/{get_normalized_model_name(model_name)}.json")
+
+    model_response_collection: QACollection = QACollection(qa_map=model_response_set)
+    if write_json_to_file(output_file, model_response_collection):
+        print("Eval completed")
+
+
+def get_normalized_model_name(model_name: str) -> str:
+    return "".join(model_name.split("/")[-1])
+
+
+def score_model_outputs() -> Dict[str, float]:
+    evals = get_data_path(f"{eval_dir}")
+    ground_truth: QACollection = load_ap_history_qa_set()
+    qa_set = ground_truth.qa_map
+
+    scores: Dict[str, float] = {}
+
+    for model_file in evals.glob("*.json"):
+        model_name = model_file.stem
+        model_collection = read_json_from_file(model_file, QACollection)
+        if not model_collection:
+            print(f"Skipping {model_file} due to load error.")
+            continue
+
+        model_qa_map = model_collection.qa_map
+
+        correct = 0
+        total = 0
+
+        for q_number, expected_qa in qa_set.items():
+            if q_number not in model_qa_map:
+                continue
+
+            predicted_qa = model_qa_map[q_number]
+
+            # Exact match scoring, case-insensitive
+            if predicted_qa.answer.strip().lower() == expected_qa.answer.strip().lower():
+                correct += 1
+
+            total += 1
+
+        accuracy = correct / total if total else 0.0
+        scores[model_name] = accuracy
+        print(f"{model_name}: {correct}/{total} correct ({accuracy:.2%})")
+
+    return scores
 
 
 @sleep_and_retry
 @limits(calls=8, period=60)
-def generate_answer(question: str) -> LLMResponse:
+def generate_answer(model_name: str, question: str) -> LLMResponse:
     response = completion(
-        # model="gemini/gemini-2.5-flash",
-        model="ollama/granite3.3:2b",
+        model=model_name,
         response_format=LLMResponse,
         messages=[
             {"content": system_prompt, "role": "system"},

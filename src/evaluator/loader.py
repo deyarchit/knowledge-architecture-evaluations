@@ -29,7 +29,6 @@ def process_ap_history_data():
 
 def process_raw_data(pdf_path: str, output_json_path: str):
     output_file = Path(output_json_path)
-    output_file.parent.mkdir(parents=True, exist_ok=True)
 
     # Load existing QA set (if any) and calculate index offset
     offset: int = 0
@@ -79,6 +78,7 @@ def read_json_from_file(file: Path, model_cls: Type[T]) -> Optional[T]:
 
 
 def write_json_to_file(output_file: Path, model_instance: BaseModel) -> bool:
+    output_file.parent.mkdir(parents=True, exist_ok=True)
     try:
         output_file.write_text(
             model_instance.model_dump_json(indent=2, exclude_none=True), encoding="utf-8"
