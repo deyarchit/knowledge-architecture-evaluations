@@ -4,7 +4,6 @@ from pathlib import Path
 def find_project_root() -> Path:
     """
     Finds the project root by searching for a pyproject.toml file
-    or alternatively a setup.py / setup.cfg file.
     """
     current_dir = Path(__file__).resolve()
 

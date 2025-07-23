@@ -1,27 +1,32 @@
+from itertools import islice
+from typing import Optional
+
 from litellm import CustomStreamWrapper, completion
 from litellm.types.utils import StreamingChoices
 from ratelimit import limits, sleep_and_retry
 
 from evaluator.loader import load_ap_history_qa_set
 from evaluator.models.llm import LLMResponse
-from evaluator.models.qa import QASet
+from evaluator.models.qa import QACollection
 
 
-def ap_history_evaluation():
+def ap_history_evaluation(max_questions: Optional[int] = None):
     # This is only needed once
     # process_ap_history_data()
 
     # Load the processed data
-    qa_set: QASet = load_ap_history_qa_set()
-
-    # Store the subset of items you are actually evaluating
-    evaluated_qa_items = qa_set.qa_set
+    qa_collection: QACollection = load_ap_history_qa_set()
+    qa_set = qa_collection.qa_map
 
     # Get the total number of items evaluated
-    total_evaluated_questions = len(evaluated_qa_items)
+    if max_questions:
+        total_evaluated_questions = max_questions
+    else:
+        total_evaluated_questions = len(qa_set)
     incorrect_answers = 0
 
-    for qa in evaluated_qa_items:
+    for qa_number in islice(qa_set, max_questions):
+        qa = qa_set[qa_number]
         response = generate_answer(qa.question)
         if response.answer.upper() != qa.answer.upper():
             print(

@@ -1,580 +1,580 @@
 {
-  "qa_set": [
-    {
+  "qa_map": {
+    "0": {
       "question": "“Sir, many of our people, keenly desirous of the wares and things of your Kingdom, which are brought here by your people, and in order to satisfy their voracious appetite, seize many of our people, freed and exempt men, and they kidnap even nobles and the sons of nobles, and our relatives, and take them to be sold to the Whites who are in our Kingdoms.” The quotation above comes from a 1526 letter to a European monarch from a king located: a) on the eastern coast of Africa b) on the western coast of Africa c) on the Pacific coast of Central America d) on the Pacific coast of South America e) in the Pacific Islands",
       "answer": "B"
     },
-    {
+    "1": {
       "question": "The economies of the southern colonies of colonial British America developed most like colonial economies in: a) Canada b) The Dutch East Indies c) The Caribbean and Brazil d) Ireland and Scotland e) Massachusetts and New York",
       "answer": "C"
     },
-    {
+    "2": {
       "question": "Between 1500 and 1800, Europeans were primarily interested in tropical colonies in the Atlantic and Indian Oceans and in the Caribbean because: a) Large profits could be made from products like sugar, coffee, and pepper b) The major European states were competing with each other for imperial hegemony c) These colonies had strategic military importance d) These areas had small populations and were thus easy to control e) Many Europeans were interested in getting away from Europe’s wintry climate",
       "answer": "A"
     },
-    {
+    "3": {
       "question": "Which of the following was the most important factor enabling the Spanish to defeat the Aztec Empire? a) The Spanish were able to field larger armies than the Aztecs b) The Spanish were able to use their understanding of Aztec culture to create effective propaganda that weakened Aztec resistance. c) The Spanish were able to exploit discontent within the Aztec state to trigger a revolt of the lower classes against the Aztec ruling class. d) The Spanish were able to form military alliances with other indigenous peoples who were enemies of the Aztecs. e) The Spanish were able to devise effective countermeasures to the horse cavalry that formed the bulk of the Aztec army.",
       "answer": "D"
     },
-    {
+    "4": {
       "question": "All of the following have been African contributions to cultures in the Americas except: a) African forms of religious observance b) African musical instruments c) knowledge of how to grow African crops d) African folklore e) African monetary systems",
       "answer": "E"
     },
-    {
+    "5": {
       "question": "Which of the following are states that dominated the Mediterranean trade during the sixteenth century? a) Italian city-states and the Ottoman Empire b) The Byzantine Empire and the Ottoman Empire c) Spain and Portugal d) The Hapsburg Empire and France e) The Crusader states",
       "answer": "A"
     },
-    {
+    "6": {
       "question": "The success of the European powers in penetrating the Asian trading system by 1600 can best be explained by the a) Asian demand for luxury goods b) European use of steam power c) high demand for European agricultural produce in China and India d) lower prices of European manufactured products e) opening of rich silver mines in Peru and Mexico",
       "answer": "E"
     },
-    {
+    "7": {
       "question": "During the eighteenth century, which of the following reigned, but did not rule? a) The Ottoman sultan b) The king of France c) The Chinese emperor d) The Japanese emperor e) The Russian Tzar",
       "answer": "D"
     },
-    {
+    "8": {
       "question": "In the period 1550-1750, most of the world’s ten largest cities were located in which of the following regions? a) The Middle East b) Western Europe c) North Africa and southern Europe d) South Asia e) East Asia",
       "answer": "E"
     },
-    {
+    "9": {
       "question": "Which of the following contributed most to the emergence of Russia as an expanding Eurasian power in the period between 1450 and 1750? a) Its absorption of traditions and technology from the Byzantine Empire and western Europe b) Its success in creating alliances with European powers to expel Turkish invaders from the south. c) The eradication of Islam from Central Asia d) The fall of the kingdoms of Poland and Prussia e) The use of its strong navy to acquire colonial holdings worldwide",
       "answer": "A"
     },
-    {
+    "10": {
       "question": "Which of the following resulted from the arrival of western Europeans in India and China during the time period 1450 to 1750? a) The spread of infectious diseases in India and China and a drastic drop in their populations b) The establishment of small European enclaves in India and China c) A massive drain on silver and gold from India and China d) A great expansion in slave labor in India and China e) A major disruption of the economies of India and China",
       "answer": "B"
     },
-    {
+    "11": {
       "question": "All of the following were characteristics of western Europe in the 1400s and 1500s except: a) the growth of capitalism b) the decline of the feudal system c) an increasingly urban population d) the development of improved weaponry e) the continued strength of the Roman Catholic Church",
       "answer": "E"
     },
-    {
+    "12": {
       "question": "Which of the following statements best describes the relationship between European and Asian commercial interests in the 1500s? a) Europeans took over the Asian trading network by force. b) The trading network in Asia was divided into three zones – Arab, Indian, and Chinese. c) Europeans imposed a monopoly system on the spice trade. d) Europeans abandoned any idea of colonizing or trading directly with Asians in favor of using Asian intermediaries. e) Europeans found, after trial and error, that the only way to benefit from the Asian trading network was to join it as a peaceful partner.",
       "answer": "E"
     },
-    {
+    "13": {
       "question": "Ghana in the 900s and France in the 1600s had which of the following characteristics in common? a) Parliamentary government b) Divine monarchy c) Matrilineal descent d) Islam e) Trade based on gold and manufacturing good",
       "answer": "B"
     },
-    {
+    "14": {
       "question": "Which statement most accurately describes Peter the Great’s approach to reforming Russia? a) He reorganized the bureaucracy but did not touch the military. b) He chose to adopt technological modernizations but did not reform the governmental structure. c) He adopted some aspects of western European political organization, such as political parties. d) His many reforms improved the life of the serfs, although he did not end the practice. e) He used his modernization efforts to tighten his control over the country.",
       "answer": "E"
     },
-    {
+    "15": {
       "question": "Which of the following statements most accurately describes the differences between the Spanish and Portuguese empires in the Americas? a) Portuguese Brazil was more dependent on agriculture for its economic base than was Spanish America. b) The Catholic Church had more influence over developments in Spanish America than in Brazil. c) Portugal exercised direct governmental control over Brazil, whereas Spain put little structure in place to govern its colonies. d) Spanish America, unlike Brazil, developed a multiracial society. e) Spanish America had little in the way of local manufacturing, whereas Brazil became for the most part self-sufficient.",
       "answer": "B"
     },
-    {
+    "16": {
       "question": "Which of the following was a problem common to the Abbasids, Ottomans, and Mughals? a) European seizure of the African and Southeast Asian trading networks. b) Western technology c) Lack of a shared land border with Europe. d) A rigid succession policy that invited conflict. e) The competing power structure of regional warrior aristocrats.",
       "answer": "E"
     },
-    {
+    "17": {
       "question": "Triangular trade referred to the network connecting: a) East Africa, the Arabian Peninsula, and India b) The west coast of Africa, North America, and western Europe c) The west and east coasts of Africa and India d) India, Southeast Asia, and China e) China, the Middle East, and the southern European coast of the Mediterranean",
       "answer": "B"
     },
-    {
+    "18": {
       "question": "All of the following were long-term causes of the Protestant Reformation except: a) religious wars in Europe b) the emergence of European nation-states c) the political power of the papacy d) the lax morals of many clergy e) the call by humanists to simplify Catholic practices",
       "answer": "A"
     },
-    {
+    "19": {
       "question": "All of the following are true about the Enlightenment except: a) The Enlightenment spawned the Scientific Revolution b) According to the thinking of the Enlightenment, religion was based on superstition and should be discarded. c) Enlightenment thinkers believed in the power of reason to discover natural law. d) Enlightenment thinkers owed much to the earlier Scholasticism for their view of the value of education. e) The influence of the Enlightenment can be seen in the Latin American independence movements of the early 1800s.",
       "answer": "D"
     },
-    {
+    "20": {
       "question": "All of the following were true of the Renaissance except: a) it was influenced by the Muslim occupation of Spain. b) it resulted from Mediterranean trade during the Crusades. c) it began after the development of regional states in Europe. d) it occurred as Byzantium was in decline. e) it featured a revival of learning that occurred throughout Europe in the fourteenth century.",
       "answer": "E"
     },
-    {
+    "21": {
       "question": "Compared to European exploration in the Indian Ocean, that of the Chinese: a) used fewer and smaller ships. b) covered shorter distances. c) was designed to establish a military presence. d) gained strength after the mid-1430s. e) was an effort to spread Confucianism.",
       "answer": "C"
     },
-    {
+    "22": {
       "question": "Between 1450 and 1750, European voyages of exploration: a) were designed to break Italian and Muslim trade monopolies. b) were carried out without knowledge of oceanic conditions. c) were confined to the Atlantic Ocean. d) opened up trade relations with Polynesian islanders. e) set up African posts that opened up the interior of the continent to European exploration.",
       "answer": "A"
     },
-    {
+    "23": {
       "question": "Which of the following was true of the cultures of Ming and Qing China? a) The concept of filial piety was abandoned. b) The custom of foot-binding became less frequent. c) The Chinese were introduced to American food crops. d) Both boys and girls were allowed to take the civil service exams. e) China developed an egalitarian society.",
       "answer": "C"
     },
-    {
+    "24": {
       "question": "Between 1500 and 1800, the Islamic empires: a) abandoned the tradition of steppe diplomacy. b) failed to adapt to the urban areas of the lands they conquered. c) steadily strengthened in power. d) did not use gunpowder weapons. e) were ethnically diverse.",
       "answer": "E"
     },
-    {
+    "25": {
       "question": "Which of the following products were brought to Europe through the Columbian Exchange? a. horses and potatoes b. horses and tobacco c. potatoes and sheep d. potatoes and tobacco e. sugar and tobacco",
       "answer": "D"
     },
-    {
+    "26": {
       "question": "All of the following trends occurred in the decades after the outbreak of the bubonic plague in 1348 EXCEPT: a) fall in land values and rents b) rise in real wages c) reduction in the total land area under cultivation d) downward trend in the prices of manufactured goods e) decline in the demand for grain",
       "answer": "D"
     },
-    {
+    "27": {
       "question": "Which of the following statements about the Renaissance is NOT accurate? A) The Renaissance challenged medieval intellectual values and styles B) The Renaissance encouraged a brasher spirit that may have helped create a new Western interest in exploring C) The Renaissance failed to develop any new ideas concerning political organization D) The Renaissance was built on a more commercialized economy E) The Renaissance had a southern and northern phase",
       "answer": "C"
     },
-    {
+    "28": {
       "question": "Which of the following was NOT a characteristic of the Renaissance? a) re-emphasis on the culture of antiquity b) search for balance and proportion in politics c) the development of a historical and critical view of the world d) strong anti-Christian sentiment e) confidence in human rationality",
       "answer": "D"
     },
-    {
+    "29": {
       "question": "Which of the following was the primary goal of Zheng He's expeditions? A) to eliminate foreign trade with China B) to establish Chinese trading cities on the Indian Ocean C) to impress foreign people with the power and might of the Ming dynasty. D) to establish diplomatic relations with the Muslim states trading on the Indian Ocean E) to offer military protection and support to Chinese merchants in the Indian Ocean",
       "answer": "C"
     },
-    {
+    "30": {
       "question": "Chinese naval expeditions were abruptly ended in 1433 because A) Zheng He was suspected of building his personal power B) maintaining the fleet was considered a needless waste of national resources C) the voyages had led to several humiliating defeats D) the large Chinese vessels proved to be unseaworthy E) all of the above",
       "answer": "B"
     },
-    {
+    "31": {
       "question": "What two nations began a maritime revolution that profoundly altered the course of world history? A) Portugal and Spain B) China and Japan C) England and France D) Germany and Russia E) Greece and Italy",
       "answer": "A"
     },
-    {
+    "32": {
       "question": "The first European country to enter into direct trade with the Far East and establish colonies there was: a) Spain b) France c) Britain d) Portugal e) Holland",
       "answer": "D"
     },
-    {
+    "33": {
       "question": "By the 16th century the center of commercial activity had shifted from the Mediterranean to the: a) Atlantic Ocean b) Red Sea c) Indian Ocean d) Baltic Sea e) North Sea",
       "answer": "A"
     },
-    {
+    "34": {
       "question": "All of the following helped cause the Age of European Exploration EXCEPT: a) technological advances making long sea voyages possible b) the desire to spread Christianity c) the Mughals' continued encroachment into Central Europe d) European demand for eastern spices e) Ottoman expansion threatening access to the goods of the East",
       "answer": "C"
     },
-    {
+    "35": {
       "question": "All of the following were causes of the Scientific Revolution EXCEPT: a) improvements in scientific instruments b) the contributions of medieval universities c) the recovery of classical scholarship during the Renaissance d) the challenges of navigation during long sea voyages e) the active support of the papacy",
       "answer": "E"
     },
-    {
+    "36": {
       "question": "The ideas of the Enlightenment challenged the long-term assumptions about sovereignty and instead proposed that: a) true government stems from religious authority b) governments are bound to the will of the people c) the best form of government is a democracy d) all government is inherently unjust; humans are better off living in a state of nature e) church and state should be entirely separate",
       "answer": "B"
     },
-    {
+    "37": {
       "question": "The Hanseatic League monopolized trade in the: a) Mediterranean Sea b) English Channel c) Baltic and North Seas d) Hanse Sea e) Adriatic and Black Seas",
       "answer": "C"
     },
-    {
+    "38": {
       "question": "A result of the Protestant Reformation of the 16th century was the: A) establishment of state churches in England, Scotland, and northern Germany B) separation of Church and State in France C) development of a uniform set of Protestant beliefs D) collapse of the temporal and spiritual power of the Pope E) all of these choices are correct",
       "answer": "A"
     },
-    {
+    "39": {
       "question": "The Reformation influenced the development of the modern world primarily by: a) reducing the power of the state over the lives of ordinary people b) providing some justification for challenging the absolute authority of kings c) discouraging the growth of capitalism, which was criticized as being too worldly and materialistic d) believing in complete religious freedom for everyone e) forcing the Catholic Church to reform itself",
       "answer": "B"
     },
-    {
+    "40": {
       "question": "The Spanish term Reconquista refers to which of the following: a) Spain's victory over the French in northern Italy b) the defeat of the Islamic states on the Iberian peninsula c) the long sought trade agreement with Portugal d) the beginnings of Habsburg rule in Spain e) the sailing of the Armada against England",
       "answer": "B"
     },
-    {
+    "41": {
       "question": "Which of the following was the most significant factor in the rise of national states in Western Europe? a) the end of serfdom b) the acquiring of colonies in the New World c) the rise of the feudal nobility d) the need for protection from barbarian invasions e) the rise and support of the middle class",
       "answer": "E"
     },
-    {
+    "42": {
       "question": "One of the most significant impacts of sugar cane production on global economies was A) widespread deterioration in diet and nutrition B) the increased demand for slave labor C) increased demand for tea and coffee D) increased demand for other luxury goods, such as porcelain E) all of the above",
       "answer": "B"
     },
-    {
+    "43": {
       "question": "In the New World, the Columbian Exchange generally resulted in A) the introduction of infectious diseases B) the staggering loss of indigenous populations C) the introduction of domesticated animals such as cattle and horses D) the introduction of food crops such as wheat E) all of the above",
       "answer": "E"
     },
-    {
+    "44": {
       "question": "The labor system that compelled Indians to work in Spanish mines and fields in exchange for protection and Christian conversion was known as A) the encomienda system B) the hacienda C) slavery D) indentured servitude E) the repartimiento system",
       "answer": "A"
     },
-    {
+    "45": {
       "question": "Which of the following was not a significant factor in Cortés's defeat of the Aztec empire? A) superior Spanish technology, especially swords, muskets, cannons, and horses B) a devastating smallpox epidemic C) the inadequate defenses of Tenochtitlan D) the resentment of many indigenous peoples to Aztec rule E) All of the above are factors",
       "answer": "C"
     },
-    {
+    "46": {
       "question": "One significant difference in the administration of English colonies compared to their Spanish counterparts was A) the Spanish crown was less actively involved in the government of their colonies B) English governors were elected directly by the colonists, while Spanish viceroys were appointed by the crown C) Spanish colonies had powerful local assemblies, while the English did not D) English colonies were often financed by private investors, who retained control over colonial affairs E) the Church played a greater role in the administration of Spanish colonies",
       "answer": "D"
     },
-    {
+    "47": {
       "question": "In spite of the ravages of the slave trade, the population of Africa actually increased in the eighteenth century due to A) European settlement of Africa B) resettlement of Asian workers in parts of Africa C) the introduction of new staple foods from the Americas D) improved health and life expectancy E) the cessation of intertribal warfare in Africa",
       "answer": "C"
     },
-    {
+    "48": {
       "question": "The middle passage of the slave trade was A) the forced march of slaves through central Africa from their homelands B) the holding pens where African captives were held before sale to plantation owners C) the ship voyage across the Atlantic in the cargo decks D) the public auction of slaves in the Caribbean E) none of the above",
       "answer": "C"
     },
-    {
+    "49": {
       "question": "On the plantations of the Caribbean and Brazil, slaves A) thrived because climate and diet were similar to Africa B) suffered heavy losses due to tropical diseases and brutal conditions C) quickly intermarried with the indigenous populations D) formed families and re-created kinship ties similar to those in Africa E) none of the above",
       "answer": "B"
     },
-    {
+    "50": {
       "question": "How did the mining industries of the Americas stimulate global economic growth? A) Mining increased the demand for labor, sparking the growth of an Indian middle class B) Mineral ores from Mexico provided the raw materials for European manufacturing C) The sale of slaves to the mines by the Portuguese resulted in the Portuguese spending their wealth throughout Europe and Africa D) The Spanish quinto (profit from tax on mineral products) circulated throughout European and Asian markets E) all of the above",
       "answer": "D"
     },
-    {
+    "51": {
       "question": "The economic theory of mercantilism would be consistent with which of the following statements? A) economies will prosper most when trade is restricted as little as possible B) colonies are of little economic importance to the mother country C) it is vital that a country imports more than it exports D) tariff barriers should be avoided as much as possible E) a government should seek to direct the economy so as to maximize exports",
       "answer": "E"
     },
-    {
+    "52": {
       "question": "An indentured servant differed from a slave in that he or she A) received wages for their work B) worked for a limited period of time, usually 7 years, to repay passage to America C) was used only for agricultural work D) was held in servitude for life E) was ineligible for the 50 acres of land given under Virginia’s head-right system",
       "answer": "B"
     },
-    {
+    "53": {
       "question": "Spanish colonization of the New World was characterized by all of the following EXCEPT A) ruthless exploitation of the Native Americans B) establishing African slavery in the Americas C) reliance of large families as settlers. D) introduction of the horse to America E) the creation of large agricultural plantations",
       "answer": "C"
     },
-    {
+    "54": {
       "question": "European exploration of the Americas resulted in all of the following EXCEPT the A) introduction of new products to the Americas B) spread of European diseases, such as smallpox, to the Native Americans C) introduction of new products to Europe D) development of unified resistance by the Native Americans to European settlement E) mixed-race peoples in Mexico and Central America",
       "answer": "D"
     },
-    {
+    "55": {
       "question": "The Mughal Empire is distinguished from the Ottomans and Safavids mostly because it was A) A democracy B) A Hindu land ruled by Muslims C) Not very war-like D) Heavily influenced by the Chinese E) Still controlled by the Mongols",
       "answer": "B"
     },
-    {
+    "56": {
       "question": "Why did the Ottoman, Safavid and Mughal Empires decline simultaneously? A) Inability to adjust to the changes in military technology and the world economy B) Natural disasters C) The bubonic plague D) Declining birth rates combined with fertility problems E) A religious prohibition against banking",
       "answer": "A"
     },
-    {
+    "57": {
       "question": "After the period of civil wars ended in Japan, A) Japanese leaders fragmented into many feuding castes B) Korea invaded C) China invaded D) Japanese leaders established the Tokugawa Shogunate, a centralized military government E) Japanese leaders resigned, thus allowing a true democracy to form",
       "answer": "D"
     },
-    {
+    "58": {
       "question": "What European organization was a transmitter of science and technology to China? A) Society of Jesus, or Jesuits B) Teutonic Knights C) The Royal Scientific Society D) Order of the Cross E) Knights Templar",
       "answer": "A"
     },
-    {
+    "59": {
       "question": "The princes of Muscovy organized a movement of conquest and expansion against the A) Japanese B) Chinese C) Koreans D) Golden Horde E) Tibetans",
       "answer": "D"
     },
-    {
+    "60": {
       "question": "How did the growth of a centralized Russian Empire affect the peasants? A) Peasants became serfs, people who were tied to the land. B) Peasants were deported and sent to gulags. C) Peasants could move freely at any time to improve their lot in life. D) Peasants’ standard of living improved to a “middle class” level. E) It gave the peasants the vote.",
       "answer": "A"
     },
-    {
+    "61": {
       "question": "The Janissaries were A) Slave women who lived in the sultan’s harem B) Christian boys taken from conquered territories and raised as special forces C) Regional administrators, who were granted autonomy in exchange for loyalty D) Armored, light cavalry E) Eunuchs in service to the sultan",
       "answer": "B"
     },
-    {
+    "62": {
       "question": "Peter the Great’s program of westernization included A) The first secular system of education in Russian history B) Building a powerful, modern army C) State sponsorship of new industries D) Inviting skilled foreign workers to Russia E) All of the above",
       "answer": "E"
     },
-    {
+    "63": {
       "question": "The isolationism of the Tokugawa government included A) Forbidding Japanese from going abroad B) Forbidding Chinese and Dutch merchants from trading at Nagasaki C) Forbidding scholars of neo-Confucianism from teaching in Japan D) Banning all foreign religions such as Confucianism and Buddhism E) All of the above",
       "answer": "A"
     },
-    {
+    "64": {
       "question": "Which of the following statements most accurately reflects a major difference between Arab expansion in the seventh century and Viking expansion in the ninth century? a) Arab expansion relied most heavily on diplomacy, while Viking expansion relied most heavily on military might. b) Viking expansion tended to occur in areas with few large urban centers, while the Arab expansion occurred in areas with comparatively large urban centers. c) Arab expansion was financed by religious tithing, while Viking expansion was financed by profit from the silk trade. d) Viking expansion was limited to Ireland, Scotland, Iceland, and Greenland, while Arab expansion was limited to the Arabian Peninsula and Persia. c) Arab expansion relied heavily on the technology of the cannon, while Viking expansion relied heavily on dragon boats.",
       "answer": "B"
     },
-    {
+    "65": {
       "question": "Which of the following is true of commerce in the Indian Ocean during the time period 600-1450 C.E.? a) Chinese merchants dominated the trade routes of the Indian Ocean. b) There was very little commercial activity in the Indian Ocean. c) Merchants from Europe dominated the trade routes of the Indian Ocean. d) Following the rise of the Mongols during the thirteenth century, the volume of Indian Ocean commerce fell sharply. e) Indian Ocean commerce flourished and was conducted by a mixture of Asian, Middle Eastern, and East African merchants.",
       "answer": "E"
     },
-    {
+    "66": {
       "question": "Which of the following lists three places Ibn Battuta, the fourteenth-century Muslim traveler, visited? a) The Arabian Peninsula, Iraq, and Japan b) The Arabian Peninsula, France, and India c) India, Mali, and Persia d) India, Persia, and Poland e) England, Iraq, and Mali",
       "answer": "C"
     },
-    {
+    "67": {
       "question": "Which of the following had the greatest manufacturing capacity during the time period 600 to 1450 C.E.? a) Japan b) India c) China d) Western Europe e) Russia",
       "answer": "C"
     },
-    {
+    "68": {
       "question": "The term “samurai” describes men in feudal Japan who were most like the men in feudal Europe known as: a) Lords of the manor b) Catholic bishops c) Serfs d) Knights e) Merchants",
       "answer": "D"
     },
-    {
+    "69": {
       "question": "In the period between 600 and 1450, which of the following were two occupations pursued by large numbers of African and European women? a) Midwife and healer b) Military leader and farmer c) Scribe and tax collector d) Long-distance trader and merchant e) Metalworker and textile manufacturer",
       "answer": "A"
     },
-    {
+    "70": {
       "question": "Trade spurred the introduction of both Islam and Hinduism to what is now called: a) Japan b) Brazil c) Pakistan d) Indonesia e) Saudi Arabia",
       "answer": "D"
     },
-    {
+    "71": {
       "question": "Renaissance Italy and the Islamic Middle East after the decline of the Abbasid Empire in the mid-tenth century are important examples of which of the following? a) Political unity and cultural creativity b) Political fragmentation and cultural creativity c) Political unity and the decline of religion d) Political fragmentation and the decline of religion e) Political unity and the rise of secularism",
       "answer": "B"
     },
-    {
+    "72": {
       "question": "Which of the following statements about the Mongol Empire of the thirteenth century is true? a) The invasion of Japan was attempted but was unsuccessful b) The number of Buddhist and Muslims in Asia dropped significantly as a result of Mongol persecution c) In China the Mongols eliminated the Chinese scholar-official class d) The Mongols conquered Constantinople e) Ibn Battuta’s writings describe in detail life in the court of Genghis Khan.",
       "answer": "A"
     },
-    {
+    "73": {
       "question": "Which of the following was a common feature of most Asian and European philosophies during the period 600 to 1450 C.E.? a) A close association with religion b) Emphasis on experimental science c) Reliance on ideas of individual freedom d) Substantial scholarly exchange of ideas among all world cultures e) Wide availability of printed books",
       "answer": "A"
     },
-    {
+    "74": {
       "question": "After the expansion of Islam into Africa, an organized Christian presence remained in: a) Egypt and Ethiopia b) Morocco c) Mauritania and Tunisia d) The areas along the Silk Road e) Algeria",
       "answer": "A"
     },
-    {
+    "75": {
       "question": "Which of the following contributed to the Chinese government’s decision to stop voyages of exploration in the Indian Ocean in the early fifteenth century? a) Armed resistance from Arab navies b) Lack of sufficient Chinese goods for trade c) The destruction of the Chinese fleet by typhoons. d) Government concern with domestic problems and frontier security e) Fear of the spread of the plague to China",
       "answer": "D"
     },
-    {
+    "76": {
       "question": "Which of the following languages came into existence after 1000 C.E. as the direct result of expanding global trade patterns? a) Arabic b) Chinese c) Latin d) Sanskrit e) Swahili",
       "answer": "E"
     },
-    {
+    "77": {
       "question": "Marco Polo described which of the following at Kublai Khan’s court that he had not encountered in Europe? a) The use of spies in foreign nations b) The interest of the Khan in the international sea trade and European shipbuilding techniques c) The use of paper money and coal and the practice of frequent bathing. d) The attachment of the Khan to the use of horses for military purposes. e) The austerity of the design of the Khan’s palace.",
       "answer": "C"
     },
-    {
+    "78": {
       "question": "In the period between 600 and 1450, Indian Ocean trade differed from that of the Pacific Ocean in that it: a) was more regional in nature. b) involved contacts with the islands of Southeast Asia. c) involved only spices. d) involved competition among a more diverse group of traders. e) involved commerce across large stretches of water.",
       "answer": "D"
     },
-    {
+    "79": {
       "question": "In the period between 600 and 1450: a) European women gained an increasingly greater role in political life. b) African women were confined to domestic roles. c) the Chinese custom of foot-binding began. d) the practice of sati was abolished. e) there were few role distinctions between women of elite and peasant classes globally.",
       "answer": "C"
     },
-    {
+    "80": {
       "question": "Which was true of the Mongol Empire? a) It was the largest maritime empire to that time. b) It was characterized by efficient administrators. c) It did not interfere with Islamic societies. d) It caused Eurasian trade routes to move farther north. e) It opened up trade relations between Russia and the West.",
       "answer": "D"
     },
-    {
+    "81": {
       "question": "Compared to European exploration in the Indian Ocean, that of the Chinese: a) used fewer and smaller ships. b) covered shorter distances. c) was designed to establish a military presence. d) gained strength after the mid – 1430s. e) was an effort to spread Confucianism.",
       "answer": "C"
     },
-    {
+    "82": {
       "question": "The Mayan and Gupta Empires had in common: a) The construction of ceremonial pyramids. b) The independent discovery of the value of zero as a place holder. c) Persistent pressure from invaders in frontier areas. d) Central political organization. e) The knowledge that the earth is round.",
       "answer": "B"
     },
-    {
+    "83": {
       "question": "Which of the following is true of the bubonic plague? a) It followed established trade routes. b) It was a European phenomenon. c) It affected West Africa. d) It began in Europe and spread to China. e) It died out completely after the fourteenth century.",
       "answer": "A"
     },
-    {
+    "84": {
       "question": "The Mongols: a) were capable administrators. b) persecuted Christians and Muslims within territories they conquered. c) are credited with the transmission of bubonic plague. d) were interested in Asian territories. e) moved main trade routes farther south into their southern Chinese territories.",
       "answer": "C"
     },
-    {
+    "85": {
       "question": "According to Marco Polo’s accounts, what aspects of Mongol life fascinated him? a) Their ability to ride days on end without eating. b) The simplicity of the Khan’s residential palace. c) The complexity of the Mongol language. d) The beauty of Mongol churches. e) The simplicity of the Mongol court.",
       "answer": "A"
     },
-    {
+    "86": {
       "question": "In the thirteenth century, the most urbanized region in the world was: a) Europe. b) Russia. c) Latin America. d) China. e) Australia.",
       "answer": "D"
     },
-    {
+    "87": {
       "question": "The millet system in the Islamic empires: a) was especially effective in India. b) created cooperation among the ethnic groups of the Ottoman Empire. c) was a system of slavery. d) interfered with religious sentiment. e) promoted nationalist sentiment within the Ottoman Empire.",
       "answer": "E"
     },
-    {
+    "88": {
       "question": "The most significant effect of Russia’s conversion to Eastern Orthodox Christianity was: a) the trade network that Russia’s acceptance of Christianity opened up for it. b) the way it slowed the development of a Russian national identity. c) the way the Church’s teaching that God vests power in the ruler strengthened the Russian tsars’ control over the state. d) the power it gave the Eastern Church in dealing with the Roman Catholic Church. e) its influence on Russian architecture.",
       "answer": "C"
     },
-    {
+    "89": {
       "question": "Which of the following developments most directly resulted from the Crusades? a) Growth of Italian city-states. b) Spread of the Black Death. c) Vasco da Gama’s voyage to India. d) Columbian Exchange e) Restriction of European traders to treaty ports.",
       "answer": "A"
     },
-    {
+    "90": {
       "question": "All of the following are true of the major Amerindian civilizations in Central and South America prior to the arrival of Europeans except: a) economies based on trade. b) monumental building. c) urban centers. d) differentiation of labor. e) social stratification.",
       "answer": "A"
     },
-    {
+    "91": {
       "question": "Ghana in the 900s and France in the 1600s had which of the following characteristics in common? a) Parliamentary government. b) Divine monarchy. c) Matrilineal descent. d) Islam. e) Trade based on gold and manufactured goods.",
       "answer": "B"
     },
-    {
+    "92": {
       "question": "The introduction of papermaking into Europe is an example of cultural diffusion: a) From China by way of the Eurasian trade route. b) From Japan by way of the Arab-Indian trade route. c) Through the Columbian Exchange. d) Through the Triangular Trade route. e) From the Middle East as part of the Eurasian trade route.",
       "answer": "A"
     },
-    {
+    "93": {
       "question": "A common stage in the early development of political units as diverse as England, France, China, Russia and Japan was: a) manorialism b) divine right monarchy. c) constitutional monarchy. d) feudalism. e) anarchy.",
       "answer": "D"
     },
-    {
+    "94": {
       "question": "A major area of contention between the papacy and secular rulers was the: a) establishment of the Church of England by Henry VIII. b) rulers’ determination to appoint Church officials in their nations. c) heavy tithes the rulers placed on churches within their borders. d) practice of trying clerics in secular rather than Church courts. e) rulers’ disinterest in supporting the Crusades.",
       "answer": "B"
     },
-    {
+    "95": {
       "question": "Which of the following reasons motivated both the Abbasids and the Mongols to expand their empires? a) The conversion of non-believers to their faith. b) The desire to attack first to keep invaders from their own territories. c) The need to gain a port on the Baltic Sea. d) The desire for wealth and plunder. e) Population pressures within their own empires.",
       "answer": "D"
     },
-    {
+    "96": {
       "question": "All of the following characteristics are true of the Tang and Song dynasties except: a) Buddhism appeared in China for the first time. b) The Confucian-educated scholar-gentry increased its power in government and society. c) Artistic and scientific innovations flourished. d) The subordinate role of women was symbolized by the practice of foot-binding. e) The urban population continued to grow.",
       "answer": "A"
     },
-    {
+    "97": {
       "question": "Which of the following best describes the spread of Islam in East Africa and Christianity in China? a) Neither religion made inroads in the cities of interiors of either area. b) Christianity was confined to the cities in China, while Islam made converts in the interior through the Swahili trading network. c) Islam had a decided impact on the trading centers of East Africa but little impact on the interior, whereas Christianity had little impact on either urban or rural areas in China. d) Through the trans-Saharan trading network, Islam reached West Africa, but Christianity, with its reliance on priests, did not travel as easily along. e) The East African trading centers became a blend of African and Islamic society and culture.",
       "answer": "C"
     },
-    {
+    "98": {
       "question": "All of the following were characteristics borrowed by Kievan Russia from the Byzantine Empire except: a) the orthodox Church version of Christianity b) art and architectural styles c) having the church dependent on the state. d) a large and highly trained bureaucracy. e) the concept of divine monarchy.",
       "answer": "D"
     },
-    {
+    "99": {
       "question": "The placing of upper-class Russian women into quarters separate from men was an outgrowth of Russia’s contact with: a) the Mongols b) the Byzantine Empire c) the Chinese d) the Abbasids e) Indian traders",
       "answer": "A"
     },
-    {
+    "100": {
       "question": "The Aztec civilization’s militaristic tone and use of human sacrifice was based on the earlier culture of the: a) Inca b) Maya c) Mound Builders d) Toltec e) Khazars",
       "answer": "D"
     },
-    {
+    "101": {
       "question": "The term sinicization refers to A. the rise of a religion combining Christian, Zoroastrian and Buddhist ideals B. the influence of Platonic thought on early Christianity C. the ravages of disease D. the spread of Chinese culture E. the belief that disease was caused by excessive human sinning",
       "answer": "D"
     },
-    {
+    "102": {
       "question": "Commerce was a key mode of exchange between which of the following pairs of political entities? a) The Mayan Empire and the Song dynasty b) Ghana and the Mongol Empire c) Japan and the Byzantine Empire d) The Crusader states and the Fatimid caliphate. e) Venice and the Aztec Empire.",
       "answer": "D"
     },
-    {
+    "103": {
       "question": "The success and timing of trade though the Indian Ocean basin largely depended upon A. controlling the actions of Turkish pirates B. forming a lasting trading partnership with China C. understanding the rhythms of the monsoon winds D. the Indian desire to purchase pepper from the Romans E. the invention of a revolutionary sailing vehicle",
       "answer": "C"
     },
-    {
+    "104": {
       "question": "Cities differed from Neolithic villages in two principal ways. Firstly, cities were larger and more complex than Neolithic villages. Secondly, __________________________________. A. cities served the needs of their inhabitants and immediate neighbors B. cities decisively influenced the economic, political and cultural life of large regions C. cities were less advanced militarily D. cities had populations in the thousands E. cities had protective deities",
       "answer": "B"
     },
-    {
+    "105": {
       "question": "Which of the following was not true of nomadic groups? A) Nomadic societies were patriarchal B) They had some social hierarchy C) Most of the themes of nomadic art centered on their animals D) Nomadic societies had little positive influence on settled peoples E) Nomadic societies engaged in peaceful trade.",
       "answer": "D"
     },
-    {
+    "106": {
       "question": "Western Europe after the fall of the Roman Empire was similar to what occurred in a) Byzantium after the end of the Eastern Empire b) China after the fall of the Han c) Japan after the end of the Tokugawa Shogunate d) The Holy Land after the unsuccessful Crusades ended e) The Andes when the Spanish ousted the Inca",
       "answer": "B"
     },
-    {
+    "107": {
       "question": "Which of the following statements is an accurate description of both Buddhism and Hinduism? a) The caste system was an outgrowth of Hinduism but became identified also with Buddhism. b) Neither religion placed importance on the individual’s efforts to seek release from rebirth. c) Nirvana was a major aspect of the belief system of both Buddhism and Hinduism. d) Both religions taught the importance of karma in affecting a person’s fate. e) Buddhism made use of formal rituals, but Hinduism did not.",
       "answer": "D"
     },
-    {
+    "108": {
       "question": "The Mandate of Heaven governed the relationship between the ruler and the ruled in a) China b) Japan c) France d) Ghana e) Russia",
       "answer": "A"
     },
-    {
+    "109": {
       "question": "Monasticism was an important aspect of which two of the following religions? a) Islam and Buddhism b) Buddhism and Christianity c) Daoism and Shintoism d) Hinduism and Buddhism e) Christianity and Hinduism",
       "answer": "B"
     },
-    {
+    "110": {
       "question": "Which of the following was not a characteristic of early settled agricultural communities? a) A fertility goddess as an important element in religious worship b) The division of labor and the development of specialized skills c) Cooperative public works projects d) Equal status for men and women e) The development of immunity to contagious diseases over time.",
       "answer": "D"
     },
-    {
+    "111": {
       "question": "“And what, O priests, is the noble truth of the path leading to the cessation of misery? It is…right belief, right resolve, right speech, right behavior, right occupation, right effort, right contemplation, right concentration.” These words describe a teaching of which religion? a) Judaism b) Hinduism c) Christianity d) Buddhism e) Islam",
       "answer": "D"
     },
-    {
+    "112": {
       "question": "A characteristic that the Shang Chinese shared with Egyptian civilization was the a) Principle of the mandate of heaven b) Lack of a social hierarchy c) Development of a writing system d) Ancestor worship e) Development of walled settlements to defend against invaders.",
       "answer": "C"
     },
-    {
+    "113": {
       "question": "Which of the following is true of both the Han Empire and the Gupta Empire? a) Both empires had long-established traditions of dynastic rule. b) Both were overrun by Germanic tribes in their declining years. c) Both empires were characterized by religious unity. d) Both saw a number of technological advances e) Both chose administrators on the basis of extensive examination systems.",
       "answer": "D"
     },
-    {
+    "114": {
       "question": "The Buddhist social order included a) Strict adherence to patriarchal authority b) Opposition to caste systems c) Well-defined gender-role distinctions d) Emphasis on well-educated rulers e) Veneration for one’s ancestors",
       "answer": "B"
     },
-    {
+    "115": {
       "question": "Which of the following lived after the other four? a) Confucius b) Siddhartha Gautama, the Buddha c) Jesus Christ d) Aristotle e) Laozi (Lao-Tzu)",
       "answer": "C"
     },
-    {
+    "116": {
       "question": "Which of the following pairs of religions uses images to represent its deity? a) Hinduism and Christianity b) Judaism and Christianity c) Confucianism and Buddhism d) Islam and Christianity e) Islam and Hinduism",
       "answer": "A"
     },
-    {
+    "117": {
       "question": "Which major language family arose as a result of migrations beginning in central Asia and spreading to Europe? a) Indo-European b) Romance c) Germanic d) Sino-Tibetan e) Semitic",
       "answer": "A"
     },
-    {
+    "118": {
       "question": "Which of the great religious systems below were characterized by monotheism combined with a sacred text and a strong missionary thrust? a) Buddhism and Christianity b) Buddhism and Hinduism c) Christianity and Judaism d) Christianity and Islam e) Islam and Judaism",
       "answer": "D"
     },
-    {
+    "119": {
       "question": "Which of the following is true of both the Roman Empire and the Han Empire? a) Both empires were heavily dependent on slave labor. b) Both empires were characterized by long periods of effective centralized government. c) In both empires extensive maritime trade was important. d) In both empires administrative officials were selected by an elaborate system of competitive examinations. e) Both empires were ruled by wealthy merchant elites.",
       "answer": "B"
     },
-    {
+    "120": {
       "question": "All of the following were part of the Confucian social order except a) Loyalty to the ruler b) Filial obedience to one’s father c) Respect for the old d) Chastity by wives e) Chastity by husbands",
       "answer": "E"
     },
-    {
+    "121": {
       "question": "Which of the following lived about one thousand years after the other four? a) Socrates b) Confucius c) Muhammad d) Laozi (Lao-Tzu) e) Siddhartha Gautama, the Buddha",
       "answer": "C"
     },
-    {
+    "122": {
       "question": "Which of the following characterizes trade between the Roman Empire and India during the first two centuries C.E.? Rome to India India to Rome a) Silver and gold Pepper b) Tools and weapons Silver and gold c) Horses Wheat d) Textiles Silver and gold e) Tools and weapons Wine and olive oil",
       "answer": "A"
     },
-    {
+    "123": {
       "question": "Judaism, Christianity and Islam share which of the following? a) They are polytheistic religions b) They recognize the divine nature of certain prophets. c) They revere both Mecca and Jerusalem as pilgrimage sites d) They recognize the existence of Adam and Moses. e) They share the Talmud and the Gospels as sacred texts.",
       "answer": "D"
     },
-    {
+    "124": {
       "question": "The lessons of the late Han China and the late Roman empires are that the decline of a civilization, whether temporary or permanent, A. is not simply the result of attack by outside invaders. B. follows inevitably from centralized, unrepresentative government C. results from undue dependence on slavery D. results from social rebellion in which the poor attack the rich and tear down their institutions E. results from a lack of religious conviction",
       "answer": "A"
     },
-    {
+    "125": {
       "question": "With the collapse in political order after the fall of the Han empire A. Confucianism became much more popular B. Christianity became one of the most important religions in China C. Daoism and Buddhism became much more popular D. Hindu thought began to have a profoundly important influence in China E. religions of every variety were persecuted and suppressed",
       "answer": "C"
     },
-    {
+    "126": {
       "question": "The phrase pater familias refers to A. the patriarchal nature of the Roman family B. the prolonged period of peace and stability beginning with the reign of Augustus C. the concept of Jesus of Nazareth's relationship to his god D. the position of Jupiter as the king of the Roman gods E. the central role of the Roman emperor in running the state",
       "answer": "A"
     },
-    {
+    "127": {
       "question": "The school of philosophical thought which was in the end responsible for the unification of China was A. Confucianism B. Draconianism C. Daoism D. Legalism E. Neo-Confucianism",
       "answer": "D"
     },
-    {
+    "128": {
       "question": "The fundamental doctrine of Buddhism was known as the A. Second Triad B. Ahimsa Path C. Four Noble Truths D. Three Principles of the People E. Path of Reincarnation",
       "answer": "C"
     },
-    {
+    "129": {
       "question": "The Greeks used the word polis to refer to A. the concept of excessive pride B. the city-state C. the notion of loyalty to the central government D. the pursuit of truth E. barbarians",
       "answer": "B"
     },
-    {
+    "130": {
       "question": "The political world of the ancient Greeks A. achieved unification under Pericles B. was a history of early, long-lasting centralized government C. stabilized after the conquest by Persia D. was very similar to that of Egypt E. usually consisted of independent, autonomous city-states",
       "answer": "E"
     },
-    {
+    "131": {
       "question": "The first society of Mesoamerica, which founded traditions followed by all later societies, were the A. Maya B. Olmecs C. Teotihuacan D. Mochica E. Aztecs",
       "answer": "B"
     },
-    {
+    "132": {
       "question": "By 5000 B.C.E. the Mesoamericans had discovered the agricultural potential of __________, which ultimately became the staple food of the region. A. maize B. squash C. beans D. wheat E. barley",
       "answer": "A"
     },
-    {
+    "133": {
       "question": "In regards to family structure, the __________ retained much more influence in China than in other lands. A. extended family B. nuclear family C. matriarchal structure D. cult of Isis E. slaves",
       "answer": "A"
     },
-    {
+    "134": {
       "question": "In Hinduism the highest goal of the individual soul was A. to follow the Four Noble Truths B. to escape the cycle of birth and rebirth and enter into permanent union with Brahman C. to enter into permanent union with Indra and thus escape the cycle of permanent rebirth D. to fulfill the individual's special destiny as spelled out in the process of predestination E. to perform sati",
       "answer": "B"
     },
-    {
+    "135": {
       "question": "The earliest known civilization in India was the A. Bantu B. Indo-European C. Harappan D. Sumerian E. Hindu",
       "answer": "C"
     },
-    {
+    "136": {
       "question": "All of the following statements are true in relation to the Harappan society EXCEPT A. most of their houses featured private showers and toilets B. they traded extensively with the Mesopotamians C. they had social distinctions D. their writings have provided a wealth of information for historians E. they produced representational art",
       "answer": "D"
     },
-    {
+    "137": {
       "question": "The Bantu originally came from around A. the Swahili area B. modern day Nigeria C. far southern Africa D. Egypt E. modern day Algeria",
       "answer": "B"
     },
-    {
+    "138": {
       "question": "The Bantu probably began their migrations because of A. invasions from the Mediterranean basin B. a conscious desire for conquest C. the threat of epidemic disease D. a desire to spread their monotheistic faith E. environmental changes",
       "answer": "E"
     },
-    {
+    "139": {
       "question": "In which of the following societies did women enjoy the most freedom and opportunity? A. Mesopotamia B. Egypt C. Hebrews D. Assyria E. India",
       "answer": "B"
     },
-    {
+    "140": {
       "question": "The first simplified alphabet, containing only 22 letters, was created by the A. Mesopotamians B. Assyrians C. Hebrews D. Phoenicians E. Babylonians",
       "answer": "D"
     },
-    {
+    "141": {
       "question": "Ethical monotheism was in the tradition of the A. Mesopotamians B. Egyptians C. Assyrians D. Hebrews E. Phoenicians",
       "answer": "D"
     },
-    {
+    "142": {
       "question": "The Mesopotamian style of writing was known as A. demotic B. cuneiform C. hieroglyphics D. Coptic E. alphabetic",
       "answer": "B"
     },
-    {
+    "143": {
       "question": "In Mesopotamia, prisoners of war, convicted criminals, and heavily indebted individuals were the three main sources for A. slaves B. indentured servants C. dependent clients D. mercenary soldiers E. indentured priests",
       "answer": "A"
     }
-  ]
+  }
 }

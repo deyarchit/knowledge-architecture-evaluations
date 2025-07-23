@@ -1,18 +1,18 @@
 import re
 from pathlib import Path
-from typing import List
+from typing import Dict
 
 from pypdf import PdfReader
 
-from evaluator.models.qa import QA, QASet
+from evaluator.models.qa import QA, QACollection
 from evaluator.utils import get_data_path
 
 output_json = get_data_path("processed/ap_history_qa.json")
 
 
-def load_ap_history_qa_set() -> QASet:
+def load_ap_history_qa_set() -> QACollection:
     output_file = Path(output_json)
-    existing_qa = QASet.model_validate_json(output_file.read_text(encoding="utf-8"))
+    existing_qa = QACollection.model_validate_json(output_file.read_text(encoding="utf-8"))
     return existing_qa
 
 
@@ -27,35 +27,43 @@ def process_ap_history_data():
 
 
 def process_raw_data(pdf_path: str, output_json_path: str):
-    reader = PdfReader(pdf_path)
-    qa_set: List[QA] = []
-
-    for idx, page in enumerate(reader.pages[1:]):
-        text = page.extract_text()
-        if idx % 2 == 0:
-            qa_set.append(QA(question=_cleanup_text(text), answer=""))
-        else:
-            qa_set[-1].answer = _extract_answer_option(text)
-
     output_file = Path(output_json_path)
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
+    # Load existing QA set (if any) and calculate index offset
     try:
-        existing_qa = (
-            QASet.model_validate_json(output_file.read_text(encoding="utf-8"))
+        existing_qa_set = (
+            QACollection.model_validate_json(output_file.read_text(encoding="utf-8")).qa_map
             if output_file.exists()
-            else None
+            else {}
         )
     except Exception:
-        # print(f"Error loading existing QA set from {output_json_path}: {e}")
-        existing_qa = None
+        existing_qa_set = {}
 
-    combined_qa = (existing_qa.qa_set if existing_qa else []) + qa_set
-    final_qa_set = QASet(qa_set=combined_qa)
+    offset = max(existing_qa_set.keys(), default=-1) + 1
+
+    # Parse new PDF and offset question numbers during parsing
+    reader = PdfReader(pdf_path)
+    qa_set: Dict[int, QA] = {}
+
+    q_idx = offset
+    for idx, page in enumerate(reader.pages[1:]):
+        text = page.extract_text()
+
+        if idx % 2 == 0:
+            qa_set[q_idx] = QA(question=_cleanup_text(text), answer="")
+        else:
+            qa_set[q_idx].answer = _extract_answer_option(text)
+            q_idx += 1
+
+    #  Merge and dump
+    merged_qa_set = {**existing_qa_set, **qa_set}
+    final_qa_set = QACollection(qa_map=merged_qa_set)
 
     try:
         output_file.write_text(
-            final_qa_set.model_dump_json(indent=2, exclude_none=True), encoding="utf-8"
+            final_qa_set.model_dump_json(indent=2, exclude_none=True),
+            encoding="utf-8",
         )
         print(f"Successfully saved QA set to {output_json_path}")
     except Exception as e:

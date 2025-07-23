@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict
 
 from pydantic import BaseModel, Field
 
@@ -8,5 +8,5 @@ class QA(BaseModel):
     answer: str = Field(..., description="The answer to the question")
 
 
-class QASet(BaseModel):
-    qa_set: List[QA]
+class QACollection(BaseModel):
+    qa_map: Dict[int, QA]
