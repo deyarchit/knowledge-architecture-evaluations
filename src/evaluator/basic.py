@@ -5,14 +5,14 @@ from litellm import CustomStreamWrapper, completion
 from litellm.types.utils import StreamingChoices
 from ratelimit import limits, sleep_and_retry
 
-from evaluator.loader import load_ap_history_qa_set
+from evaluator.loader import load_ap_history_qa_set, process_ap_history_data
 from evaluator.models.llm import LLMResponse
 from evaluator.models.qa import QACollection
 
 
 def ap_history_evaluation(max_questions: Optional[int] = None):
     # This is only needed once
-    # process_ap_history_data()
+    process_ap_history_data()
 
     # Load the processed data
     qa_collection: QACollection = load_ap_history_qa_set()
