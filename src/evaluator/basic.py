@@ -2,9 +2,9 @@ from litellm import CustomStreamWrapper, completion
 from litellm.types.utils import StreamingChoices
 from ratelimit import limits, sleep_and_retry
 
-from .loader import load_ap_history_qa_set
-from .models.llm import LLMResponse
-from .models.qa import QASet
+from evaluator.loader import load_ap_history_qa_set
+from evaluator.models.llm import LLMResponse
+from evaluator.models.qa import QASet
 
 
 def ap_history_evaluation():

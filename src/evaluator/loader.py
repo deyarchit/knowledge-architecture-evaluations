@@ -4,8 +4,8 @@ from typing import List
 
 from pypdf import PdfReader
 
-from .models.qa import QA, QASet
-from .utils import get_data_path
+from evaluator.models.qa import QA, QASet
+from evaluator.utils import get_data_path
 
 output_json = get_data_path("processed/ap_history_qa.json")
 

@@ -1,4 +1,4 @@
-from .basic import ap_history_evaluation
+from evaluator.basic import ap_history_evaluation
 
 
 def main():
