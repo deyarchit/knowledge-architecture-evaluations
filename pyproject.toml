@@ -1,5 +1,9 @@
+[build-system]
+requires = ["uv_build>=0.7.19,<0.8.0"]
+build-backend = "uv_build"
+
 [project]
-name = "knowledge-evaluations"
+name = "evaluator"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,10 +12,11 @@ dependencies = [
     "litellm>=1.74.4",
     "pydantic>=2.11.7",
     "pypdf>=5.8.0",
+    "ratelimit>=2.2.1",
 ]
 
+[project.scripts]
+"evaluator" = "evaluator.main:main"
+
 [dependency-groups]
-dev = [
-    "mypy>=1.17.0",
-    "ruff>=0.12.3",
-]
+dev = ["mypy>=1.17.0", "ruff>=0.12.3"]

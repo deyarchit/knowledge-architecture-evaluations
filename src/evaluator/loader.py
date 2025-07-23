@@ -4,9 +4,10 @@ from typing import List
 
 from pypdf import PdfReader
 
-from models.qa import QA, QASet
+from .models.qa import QA, QASet
+from .utils import get_data_path
 
-output_json = "data/processed/ap_history_qa.json"
+output_json = get_data_path("processed/ap_history_qa.json")
 
 
 def load_ap_history_qa_set() -> QASet:
@@ -22,7 +23,7 @@ def process_ap_history_data():
         "data/raw/MC_periods.pdf",
     ]
     for pdf in input_pdfs:
-        process_raw_data(pdf, output_json)
+        process_raw_data(pdf, str(output_json))
 
 
 def process_raw_data(pdf_path: str, output_json_path: str):

@@ -1,8 +1,10 @@
-from litellm import completion
+from litellm import CustomStreamWrapper, completion
+from litellm.types.utils import StreamingChoices
+from ratelimit import limits, sleep_and_retry
 
-from data.loader import load_ap_history_qa_set
-from models.llm import LLMResponse
-from models.qa import QASet
+from .loader import load_ap_history_qa_set
+from .models.llm import LLMResponse
+from .models.qa import QASet
 
 
 def ap_history_evaluation():
@@ -23,7 +25,7 @@ def ap_history_evaluation():
         response = generate_answer(qa.question)
         if response.answer.upper() != qa.answer.upper():
             print(
-                f"Incorrect answer: LLM Response: {response.answer.upper()} Actual Response: {qa.answer.upper()}"
+                f"Incorrect answer: LLM Response: {response.answer.upper()} Correct Response: {qa.answer.upper()}"
             )
             incorrect_answers += 1
 
@@ -31,10 +33,12 @@ def ap_history_evaluation():
     print(f"Total Questions: {total_evaluated_questions} Pass Percentage: {pass_percentage:.2%}")
 
 
+@sleep_and_retry
+@limits(calls=8, period=60)
 def generate_answer(question: str) -> LLMResponse:
     response = completion(
-        # model="gemini/gemini-2.0-flash",
-        model="ollama/gemma3:1b",
+        # model="gemini/gemini-2.5-flash",
+        model="ollama/granite3.3:2b",
         response_format=LLMResponse,
         messages=[
             {"content": system_prompt, "role": "system"},
@@ -43,9 +47,17 @@ def generate_answer(question: str) -> LLMResponse:
         temperature=0.0,
     )
 
-    parsed_response: LLMResponse = LLMResponse.model_validate_json(
-        response.choices[0].message.content
-    )
+    if isinstance(response, CustomStreamWrapper):
+        raise TypeError("Expected Non-Streaming response but got streaming response")
+
+    if isinstance(response.choices[0], StreamingChoices):
+        raise TypeError("Expected Non-Streaming response but got streaming response")
+
+    content = response.choices[0].message.content
+    if content is None:
+        raise ValueError("LLM response content is None")
+
+    parsed_response: LLMResponse = LLMResponse.model_validate_json(content)
     return parsed_response
 
 
@@ -65,4 +77,5 @@ system_prompt = """
 
     Your Task:
     Answer the following multiple-choice questions by providing only the letter of the correct option.
+    /no_think
     """
