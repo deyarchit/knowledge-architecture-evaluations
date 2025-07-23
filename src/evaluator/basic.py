@@ -3,17 +3,13 @@ from itertools import islice
 from pathlib import Path
 from typing import Dict, Optional
 
-from litellm import CustomStreamWrapper, completion
-from litellm.types.utils import StreamingChoices
-from ratelimit import limits, sleep_and_retry
-
+from evaluator.llm import LLMAnswerGenerator
 from evaluator.loader import (
     load_ap_history_qa_set,
     process_ap_history_data,
     read_json_from_file,
     write_json_to_file,
 )
-from evaluator.models.llm import LLMResponse
 from evaluator.models.qa import QA, QACollection, default_qa
 from evaluator.utils import get_data_path
 
@@ -29,6 +25,9 @@ def ap_history_evaluation(model_name: str, max_questions: Optional[int] = None):
     qa_collection: QACollection = load_ap_history_qa_set()
     qa_set = qa_collection.qa_map
 
+    # Init llm
+    gen = LLMAnswerGenerator(model_name, system_prompt)
+
     # Collection to store model outputs
     model_response_set: Dict[int, QA] = defaultdict(default_qa)
 
@@ -41,7 +40,7 @@ def ap_history_evaluation(model_name: str, max_questions: Optional[int] = None):
     # Capture responses
     for q_number in islice(qa_set, total_evaluated_questions):
         qa = qa_set[q_number]
-        response = generate_answer(model_name, qa.question)
+        response = gen.generate(qa.question)
         model_response_set[q_number].answer = response.answer.upper()
 
     output_file = get_data_path(f"{eval_dir}/{get_normalized_model_name(model_name)}.json")
@@ -91,33 +90,6 @@ def score_model_outputs() -> Dict[str, float]:
         print(f"{model_name}: {correct}/{total} correct ({accuracy:.2%})")
 
     return scores
-
-
-@sleep_and_retry
-@limits(calls=8, period=60)
-def generate_answer(model_name: str, question: str) -> LLMResponse:
-    response = completion(
-        model=model_name,
-        response_format=LLMResponse,
-        messages=[
-            {"content": system_prompt, "role": "system"},
-            {"content": question, "role": "user"},
-        ],
-        temperature=0.0,
-    )
-
-    if isinstance(response, CustomStreamWrapper):
-        raise TypeError("Expected Non-Streaming response but got streaming response")
-
-    if isinstance(response.choices[0], StreamingChoices):
-        raise TypeError("Expected Non-Streaming response but got streaming response")
-
-    content = response.choices[0].message.content
-    if content is None:
-        raise ValueError("LLM response content is None")
-
-    parsed_response: LLMResponse = LLMResponse.model_validate_json(content)
-    return parsed_response
 
 
 system_prompt = """
