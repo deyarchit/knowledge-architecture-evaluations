@@ -3,13 +3,13 @@ from itertools import islice
 from pathlib import Path
 from typing import Dict, Optional
 
-from evaluator.llm import LLMAnswerGenerator
-from evaluator.loader import (
+from evaluator.data import (
     load_ap_history_qa_set,
     process_ap_history_data,
     read_json_from_file,
     write_json_to_file,
 )
+from evaluator.llm import LLMAnswerGenerator
 from evaluator.models.qa import QA, QACollection, default_qa
 from evaluator.utils import get_data_path
 
