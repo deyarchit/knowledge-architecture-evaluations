@@ -22,3 +22,7 @@ def get_data_path(filename: str) -> Path:
     project_root = find_project_root()
     data_file_path = project_root / "data" / filename
     return data_file_path
+
+
+def get_normalized_model_name(model_name: str) -> str:
+    return "".join(model_name.split("/")[-1])

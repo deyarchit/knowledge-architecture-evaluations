@@ -1,4 +1,10 @@
-from evaluator.basic import ap_history_evaluation, score_model_outputs
+import evaluator.data as data
+from evaluator.evals import basic
+
+
+def pre_process_data():
+    # process_ap_history_data()
+    data.process_ap_history_solution_guide()
 
 
 def main():
@@ -10,10 +16,9 @@ def main():
         "ollama/gemma3:4b",
         "ollama/qwen3:1.7b",
     ]
-    for model in model_list:
-        ap_history_evaluation(model)
 
-    score_model_outputs()
+    basic_evaluator = basic.BasicEval(models=model_list)
+    basic_evaluator.run_eval()
 
 
 if __name__ == "__main__":
