@@ -1,6 +1,6 @@
 from litellm import CustomStreamWrapper, completion
 from litellm.types.utils import StreamingChoices
-from ratelimit import limits, sleep_and_retry
+from ratelimit import limits, sleep_and_retry  # type: ignore
 
 from evaluator.models.llm import LLMResponse
 
@@ -18,7 +18,10 @@ class LLMAnswerGenerator:
 
         calls, period = self._get_llm_rate_limits()
         # Dynamically apply the rate limit decorator to the instance's generate method
-        self.generate = sleep_and_retry(limits(calls=calls, period=period)(self.generate))
+
+        self.generate = sleep_and_retry(  # type: ignore [method-assign]
+            limits(calls=calls, period=period)(self.generate)
+        )
 
     def _get_llm_rate_limits(self) -> tuple:
         # Determine rate limit parameters based on the model name

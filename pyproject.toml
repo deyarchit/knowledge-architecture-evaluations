@@ -19,4 +19,8 @@ dependencies = [
 "evaluator" = "evaluator.main:main"
 
 [dependency-groups]
-dev = ["mypy>=1.17.0", "ruff>=0.12.3"]
+dev = [
+    "mypy>=1.17.0",
+    "pyright>=1.1.403",
+    "ruff>=0.12.3",
+]
