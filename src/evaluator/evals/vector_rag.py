@@ -1,4 +1,5 @@
 from collections import defaultdict
+from dataclasses import dataclass
 from itertools import islice
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -15,8 +16,18 @@ from evaluator.models.qa import QA, QACollection, default_qa
 from evaluator.utils import get_data_path, get_normalized_model_name
 
 
+@dataclass
+class Strategy:
+    name: str
+    description: str
+    max_results: int = 3
+    enable_reranking: bool = False
+
+
 class VectorRAGEval:
-    def __init__(self, models: List[str], max_questions: Optional[int] = None) -> None:
+    def __init__(
+        self, models: List[str], strategy: str, max_questions: Optional[int] = None
+    ) -> None:
         self.models = models
 
         # Load processed data
@@ -26,8 +37,13 @@ class VectorRAGEval:
         # Determine total number of questions to evaluate
         self.max_questions: int = max_questions or len(qa_collection.qa_map)
 
+        # Load strategy
+        strategy_details = self._get_strategy_details(strategy)
+        if not strategy_details:
+            raise RuntimeError(f"Invalid strategy: {strategy}")
+
         # Dir where the eval outputs will be stored
-        self._eval_dir = Path("evals/vector_rag")
+        self._eval_dir = Path(f"evals/vector_rag/{strategy_details.name}")
 
         # Configure prompt for this evaluation
         self._system_prompt = """
@@ -51,7 +67,18 @@ class VectorRAGEval:
             /no_think
             """
 
-        self.vector_search = VectorSearch()
+        self.vector_search = VectorSearch(max_results=strategy_details.max_results)
+
+    def _get_strategy_details(self, strategy_name: str) -> Optional[Strategy]:
+        strategies: Dict[str, Strategy] = {
+            "strategy_baseline": Strategy(
+                name="strategy_baseline", description="", max_results=3, enable_reranking=False
+            )
+        }
+        if strategy_name not in strategies:
+            return None
+
+        return strategies[strategy_name]
 
     def run_eval(self):
         print(f"Running {self.__class__.__name__}")
