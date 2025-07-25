@@ -8,13 +8,14 @@ from evaluator.data.file_io import (
     read_json_from_file,
     write_json_to_file,
 )
+from evaluator.data.vector_search import VectorSearch
 from evaluator.evals.scoring import score_model_outputs
 from evaluator.llm import LLMAnswerGenerator
 from evaluator.models.qa import QA, QACollection, default_qa
 from evaluator.utils import get_data_path, get_normalized_model_name
 
 
-class BasicEval:
+class VectorRAGEval:
     def __init__(self, models: List[str], max_questions: Optional[int] = None) -> None:
         self.models = models
 
@@ -26,14 +27,16 @@ class BasicEval:
         self.max_questions: int = max_questions or len(qa_collection.qa_map)
 
         # Dir where the eval outputs will be stored
-        self._eval_dir = Path("evals/basic")
+        self._eval_dir = Path("evals/vector_rag")
 
         # Configure prompt for this evaluation
         self._system_prompt = """
-            You are an expert in multiple-choice questions. For each question provided, respond with only the letter corresponding to the correct answer.
+            You are an expert in multiple-choice questions. For each question provided, consider the accompanying context as primary information. If the context does not directly provide the answer, you may use your general knowledge to select the correct option. Respond with only the letter corresponding to the correct answer.
+
             Do not include any additional text, explanations, or the content of the answer option itself.
 
             Example Input Format:
+            Context: ["Paris is the capital and most populous city of France, with an estimated population of 2,141,000 residents in 2020."]
             Question: What is the capital of France?
             A) Berlin
             B) Madrid
@@ -44,9 +47,11 @@ class BasicEval:
             C
 
             Your Task:
-            Answer the following multiple-choice questions by providing only the letter of the correct option.
+            Answer the following multiple-choice questions by providing only the letter of the correct option, prioritizing information from the provided context, but supplementing with your general knowledge if necessary.
             /no_think
             """
+
+        self.vector_search = VectorSearch()
 
     def run_eval(self):
         print(f"Running {self.__class__.__name__}")
@@ -81,7 +86,8 @@ class BasicEval:
                 continue
 
             qa = self._qa_set[q_number]
-            response = gen.generate(qa.question)
+            context_docs = self.vector_search.query(qa.question)
+            response = gen.generate(qa.question, context_docs)
             model_response_set[q_number] = QA(question="", answer=response.answer.upper())
 
         # Save updated response set

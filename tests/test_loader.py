@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from pydantic import BaseModel
 
-from evaluator.data import read_json_from_file, write_json_to_file
+from evaluator.data.file_io import read_json_from_file, write_json_to_file
 
 
 class SampleModel(BaseModel):

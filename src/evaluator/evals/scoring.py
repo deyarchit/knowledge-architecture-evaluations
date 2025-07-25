@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Dict
 
-from evaluator.data import read_json_from_file
+from evaluator.data.file_io import read_json_from_file
 from evaluator.models.qa import QACollection
 
 

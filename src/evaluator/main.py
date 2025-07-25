@@ -1,5 +1,5 @@
-import evaluator.data as data
-from evaluator.evals import basic
+import evaluator.data.file_io as data
+from evaluator.evals import basic, vector_rag
 
 
 def pre_process_data():
@@ -11,6 +11,7 @@ def main():
     print("Running knowledge evaluations...")
     model_list = [
         "ollama/granite3.3:2b",
+        "ollama/phi4-mini:3.8b",
         "ollama/qwen3:4b",
         "ollama/gemma3:1b",
         "ollama/gemma3:4b",
@@ -19,6 +20,9 @@ def main():
 
     basic_evaluator = basic.BasicEval(models=model_list)
     basic_evaluator.run_eval()
+
+    vector_rag_evaluator = vector_rag.VectorRAGEval(models=model_list)
+    vector_rag_evaluator.run_eval()
 
 
 if __name__ == "__main__":
