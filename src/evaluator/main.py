@@ -1,5 +1,9 @@
+from dotenv import load_dotenv
+
 import evaluator.data.file_io as data
 from evaluator.evals import basic, vector_rag
+
+load_dotenv()
 
 
 def pre_process_data():
@@ -22,6 +26,11 @@ def main():
     basic_evaluator.run_eval()
 
     vector_rag_evaluator = vector_rag.VectorRAGEval(models=model_list, strategy="strategy_baseline")
+    vector_rag_evaluator.run_eval()
+
+    vector_rag_evaluator = vector_rag.VectorRAGEval(
+        models=model_list, strategy="strategy_with_reranking"
+    )
     vector_rag_evaluator.run_eval()
 
 

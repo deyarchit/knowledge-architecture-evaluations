@@ -1,0 +1,580 @@
+{
+  "qa_map": {
+    "0": {
+      "question": "",
+      "answer": "B"
+    },
+    "1": {
+      "question": "",
+      "answer": "C"
+    },
+    "2": {
+      "question": "",
+      "answer": "B"
+    },
+    "3": {
+      "question": "",
+      "answer": "C"
+    },
+    "4": {
+      "question": "",
+      "answer": "A"
+    },
+    "5": {
+      "question": "",
+      "answer": "B"
+    },
+    "6": {
+      "question": "",
+      "answer": "B"
+    },
+    "7": {
+      "question": "",
+      "answer": "C"
+    },
+    "8": {
+      "question": "",
+      "answer": "B"
+    },
+    "9": {
+      "question": "",
+      "answer": "B"
+    },
+    "10": {
+      "question": "",
+      "answer": "B"
+    },
+    "11": {
+      "question": "",
+      "answer": "D"
+    },
+    "12": {
+      "question": "",
+      "answer": "B"
+    },
+    "13": {
+      "question": "",
+      "answer": "C"
+    },
+    "14": {
+      "question": "",
+      "answer": "HE REORGANIZED THE BUREAUCRACY BUT DID NOT TOUCH THE MILITARY."
+    },
+    "15": {
+      "question": "",
+      "answer": "C"
+    },
+    "16": {
+      "question": "",
+      "answer": "D"
+    },
+    "17": {
+      "question": "",
+      "answer": "B"
+    },
+    "18": {
+      "question": "",
+      "answer": "D"
+    },
+    "19": {
+      "question": "",
+      "answer": "C"
+    },
+    "20": {
+      "question": "",
+      "answer": "D"
+    },
+    "21": {
+      "question": "",
+      "answer": "D"
+    },
+    "22": {
+      "question": "",
+      "answer": "C"
+    },
+    "23": {
+      "question": "",
+      "answer": "C"
+    },
+    "24": {
+      "question": "",
+      "answer": "C"
+    },
+    "25": {
+      "question": "",
+      "answer": "C"
+    },
+    "26": {
+      "question": "",
+      "answer": "D"
+    },
+    "27": {
+      "question": "",
+      "answer": "B"
+    },
+    "28": {
+      "question": "",
+      "answer": "C"
+    },
+    "29": {
+      "question": "",
+      "answer": "B"
+    },
+    "30": {
+      "question": "",
+      "answer": "C"
+    },
+    "31": {
+      "question": "",
+      "answer": "C"
+    },
+    "32": {
+      "question": "",
+      "answer": "B"
+    },
+    "33": {
+      "question": "",
+      "answer": "MEDITERRANEAN"
+    },
+    "34": {
+      "question": "",
+      "answer": "D"
+    },
+    "35": {
+      "question": "",
+      "answer": "D"
+    },
+    "36": {
+      "question": "",
+      "answer": "C"
+    },
+    "37": {
+      "question": "",
+      "answer": "BALTIC AND NORTH SEAS"
+    },
+    "38": {
+      "question": "",
+      "answer": "B"
+    },
+    "39": {
+      "question": "",
+      "answer": "B"
+    },
+    "40": {
+      "question": "",
+      "answer": "B"
+    },
+    "41": {
+      "question": "",
+      "answer": "B"
+    },
+    "42": {
+      "question": "",
+      "answer": "C"
+    },
+    "43": {
+      "question": "",
+      "answer": "D"
+    },
+    "44": {
+      "question": "",
+      "answer": "B"
+    },
+    "45": {
+      "question": "",
+      "answer": "D"
+    },
+    "46": {
+      "question": "",
+      "answer": "B"
+    },
+    "47": {
+      "question": "",
+      "answer": "B"
+    },
+    "48": {
+      "question": "",
+      "answer": "B"
+    },
+    "49": {
+      "question": "",
+      "answer": "C"
+    },
+    "50": {
+      "question": "",
+      "answer": "C"
+    },
+    "51": {
+      "question": "",
+      "answer": "B"
+    },
+    "52": {
+      "question": "",
+      "answer": "B"
+    },
+    "53": {
+      "question": "",
+      "answer": "A"
+    },
+    "54": {
+      "question": "",
+      "answer": "C"
+    },
+    "55": {
+      "question": "",
+      "answer": "C"
+    },
+    "56": {
+      "question": "",
+      "answer": "B"
+    },
+    "57": {
+      "question": "",
+      "answer": "B"
+    },
+    "58": {
+      "question": "",
+      "answer": "B"
+    },
+    "59": {
+      "question": "",
+      "answer": "D"
+    },
+    "60": {
+      "question": "",
+      "answer": "B"
+    },
+    "61": {
+      "question": "",
+      "answer": "B"
+    },
+    "62": {
+      "question": "",
+      "answer": "E"
+    },
+    "63": {
+      "question": "",
+      "answer": "B"
+    },
+    "64": {
+      "question": "",
+      "answer": "B"
+    },
+    "65": {
+      "question": "",
+      "answer": "C"
+    },
+    "66": {
+      "question": "",
+      "answer": "THE ARABIAN PENINSULA, IRAQ, AND JAPAN"
+    },
+    "67": {
+      "question": "",
+      "answer": "C"
+    },
+    "68": {
+      "question": "",
+      "answer": "C"
+    },
+    "69": {
+      "question": "",
+      "answer": "B"
+    },
+    "70": {
+      "question": "",
+      "answer": "C"
+    },
+    "71": {
+      "question": "",
+      "answer": "B"
+    },
+    "72": {
+      "question": "",
+      "answer": "B"
+    },
+    "73": {
+      "question": "",
+      "answer": "B"
+    },
+    "74": {
+      "question": "",
+      "answer": "B"
+    },
+    "75": {
+      "question": "",
+      "answer": "D"
+    },
+    "76": {
+      "question": "",
+      "answer": "C"
+    },
+    "77": {
+      "question": "",
+      "answer": "C"
+    },
+    "78": {
+      "question": "",
+      "answer": "C"
+    },
+    "79": {
+      "question": "",
+      "answer": "C"
+    },
+    "80": {
+      "question": "",
+      "answer": "D"
+    },
+    "81": {
+      "question": "",
+      "answer": "D"
+    },
+    "82": {
+      "question": "",
+      "answer": "B"
+    },
+    "83": {
+      "question": "",
+      "answer": "C"
+    },
+    "84": {
+      "question": "",
+      "answer": "C"
+    },
+    "85": {
+      "question": "",
+      "answer": "B"
+    },
+    "86": {
+      "question": "",
+      "answer": "C"
+    },
+    "87": {
+      "question": "",
+      "answer": "D"
+    },
+    "88": {
+      "question": "",
+      "answer": "C"
+    },
+    "89": {
+      "question": "",
+      "answer": "C"
+    },
+    "90": {
+      "question": "",
+      "answer": "D"
+    },
+    "91": {
+      "question": "",
+      "answer": "C"
+    },
+    "92": {
+      "question": "",
+      "answer": "C"
+    },
+    "93": {
+      "question": "",
+      "answer": "B"
+    },
+    "94": {
+      "question": "",
+      "answer": "C"
+    },
+    "95": {
+      "question": "",
+      "answer": "D"
+    },
+    "96": {
+      "question": "",
+      "answer": "D"
+    },
+    "97": {
+      "question": "",
+      "answer": "C"
+    },
+    "98": {
+      "question": "",
+      "answer": "D"
+    },
+    "99": {
+      "question": "",
+      "answer": "C"
+    },
+    "100": {
+      "question": "",
+      "answer": "B"
+    },
+    "101": {
+      "question": "",
+      "answer": "A"
+    },
+    "102": {
+      "question": "",
+      "answer": "B"
+    },
+    "103": {
+      "question": "",
+      "answer": "C"
+    },
+    "104": {
+      "question": "",
+      "answer": "B"
+    },
+    "105": {
+      "question": "",
+      "answer": "C"
+    },
+    "106": {
+      "question": "",
+      "answer": "C"
+    },
+    "107": {
+      "question": "",
+      "answer": "C"
+    },
+    "108": {
+      "question": "",
+      "answer": "C"
+    },
+    "109": {
+      "question": "",
+      "answer": "D"
+    },
+    "110": {
+      "question": "",
+      "answer": "E"
+    },
+    "111": {
+      "question": "",
+      "answer": "B"
+    },
+    "112": {
+      "question": "",
+      "answer": "B"
+    },
+    "113": {
+      "question": "",
+      "answer": "C"
+    },
+    "114": {
+      "question": "",
+      "answer": "C"
+    },
+    "115": {
+      "question": "",
+      "answer": "C"
+    },
+    "116": {
+      "question": "",
+      "answer": "B"
+    },
+    "117": {
+      "question": "",
+      "answer": "B"
+    },
+    "118": {
+      "question": "",
+      "answer": "C"
+    },
+    "119": {
+      "question": "",
+      "answer": "C"
+    },
+    "120": {
+      "question": "",
+      "answer": "D"
+    },
+    "121": {
+      "question": "",
+      "answer": "D"
+    },
+    "122": {
+      "question": "",
+      "answer": "B"
+    },
+    "123": {
+      "question": "",
+      "answer": "THEY ARE POLYTHEISTIC RELIGIONS"
+    },
+    "124": {
+      "question": "",
+      "answer": "C"
+    },
+    "125": {
+      "question": "",
+      "answer": "B"
+    },
+    "126": {
+      "question": "",
+      "answer": "C"
+    },
+    "127": {
+      "question": "",
+      "answer": "A"
+    },
+    "128": {
+      "question": "",
+      "answer": "C"
+    },
+    "129": {
+      "question": "",
+      "answer": "C"
+    },
+    "130": {
+      "question": "",
+      "answer": "C"
+    },
+    "131": {
+      "question": "",
+      "answer": "B"
+    },
+    "132": {
+      "question": "",
+      "answer": "B"
+    },
+    "133": {
+      "question": "",
+      "answer": "C"
+    },
+    "134": {
+      "question": "",
+      "answer": "B"
+    },
+    "135": {
+      "question": "",
+      "answer": "C"
+    },
+    "136": {
+      "question": "",
+      "answer": "C"
+    },
+    "137": {
+      "question": "",
+      "answer": "B"
+    },
+    "138": {
+      "question": "",
+      "answer": "C"
+    },
+    "139": {
+      "question": "",
+      "answer": "C"
+    },
+    "140": {
+      "question": "",
+      "answer": "C"
+    },
+    "141": {
+      "question": "",
+      "answer": "C"
+    },
+    "142": {
+      "question": "",
+      "answer": "CUNEIFORM"
+    },
+    "143": {
+      "question": "",
+      "answer": "A"
+    }
+  }
+}

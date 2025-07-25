@@ -52,7 +52,10 @@ class VectorRAGEval:
             Do not include any additional text, explanations, or the content of the answer option itself.
 
             Example Input Format:
-            Context: ["Paris is the capital and most populous city of France, with an estimated population of 2,141,000 residents in 2020."]
+            Context:
+            [1] Paris in 2020 is the most populous city of France
+            [2] Paris was declared the capital of France
+            [3] The berlin wall was constructed during the world wars
             Question: What is the capital of France?
             A) Berlin
             B) Madrid
@@ -67,13 +70,19 @@ class VectorRAGEval:
             /no_think
             """
 
-        self.vector_search = VectorSearch(max_results=strategy_details.max_results)
+        self.vector_search = VectorSearch(
+            max_results=strategy_details.max_results,
+            enable_reranking=strategy_details.enable_reranking,
+        )
 
     def _get_strategy_details(self, strategy_name: str) -> Optional[Strategy]:
         strategies: Dict[str, Strategy] = {
             "strategy_baseline": Strategy(
                 name="strategy_baseline", description="", max_results=3, enable_reranking=False
-            )
+            ),
+            "strategy_with_reranking": Strategy(
+                name="strategy_with_reranking", description="", max_results=3, enable_reranking=True
+            ),
         }
         if strategy_name not in strategies:
             return None
