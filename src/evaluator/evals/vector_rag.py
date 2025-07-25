@@ -9,7 +9,7 @@ from evaluator.data.file_io import (
     read_json_from_file,
     write_json_to_file,
 )
-from evaluator.data.vector_search import VectorSearch
+from evaluator.data.vector_search import SearchConfiguration, VectorSearch
 from evaluator.evals.scoring import score_model_outputs
 from evaluator.llm import LLMAnswerGenerator
 from evaluator.models.qa import QA, QACollection, default_qa
@@ -20,14 +20,26 @@ from evaluator.utils import get_data_path, get_normalized_model_name
 class Strategy:
     name: str
     description: str
-    max_results: int = 3
-    enable_reranking: bool = False
+    vector_search_config: SearchConfiguration
+
+
+strategy_baseline = Strategy(
+    name="strategy_baseline",
+    description="",
+    vector_search_config=SearchConfiguration(max_results=3, enable_reranking=False),
+)
+strategy_with_reranking = Strategy(
+    name="strategy_with_reranking",
+    description="",
+    vector_search_config=SearchConfiguration(max_results=3, enable_reranking=True),
+)
 
 
 class VectorRAGEval:
     def __init__(
-        self, models: List[str], strategy: str, max_questions: Optional[int] = None
+        self, models: List[str], strategy: Strategy, max_questions: Optional[int] = None
     ) -> None:
+        print(f"Configuring Vector RAG with strategy: {strategy}")
         self.models = models
 
         # Load processed data
@@ -37,13 +49,8 @@ class VectorRAGEval:
         # Determine total number of questions to evaluate
         self.max_questions: int = max_questions or len(qa_collection.qa_map)
 
-        # Load strategy
-        strategy_details = self._get_strategy_details(strategy)
-        if not strategy_details:
-            raise RuntimeError(f"Invalid strategy: {strategy}")
-
         # Dir where the eval outputs will be stored
-        self._eval_dir = Path(f"evals/vector_rag/{strategy_details.name}")
+        self._eval_dir = Path(f"evals/vector_rag/{strategy.name}")
 
         # Configure prompt for this evaluation
         self._system_prompt = """
@@ -70,24 +77,7 @@ class VectorRAGEval:
             /no_think
             """
 
-        self.vector_search = VectorSearch(
-            max_results=strategy_details.max_results,
-            enable_reranking=strategy_details.enable_reranking,
-        )
-
-    def _get_strategy_details(self, strategy_name: str) -> Optional[Strategy]:
-        strategies: Dict[str, Strategy] = {
-            "strategy_baseline": Strategy(
-                name="strategy_baseline", description="", max_results=3, enable_reranking=False
-            ),
-            "strategy_with_reranking": Strategy(
-                name="strategy_with_reranking", description="", max_results=3, enable_reranking=True
-            ),
-        }
-        if strategy_name not in strategies:
-            return None
-
-        return strategies[strategy_name]
+        self.vector_search = VectorSearch(strategy.vector_search_config)
 
     def run_eval(self):
         print(f"Running {self.__class__.__name__}")

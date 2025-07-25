@@ -25,11 +25,13 @@ def main():
     basic_evaluator = basic.BasicEval(models=model_list)
     basic_evaluator.run_eval()
 
-    vector_rag_evaluator = vector_rag.VectorRAGEval(models=model_list, strategy="strategy_baseline")
+    vector_rag_evaluator = vector_rag.VectorRAGEval(
+        models=model_list, strategy=vector_rag.strategy_baseline
+    )
     vector_rag_evaluator.run_eval()
 
     vector_rag_evaluator = vector_rag.VectorRAGEval(
-        models=model_list, strategy="strategy_with_reranking"
+        models=model_list, strategy=vector_rag.strategy_with_reranking
     )
     vector_rag_evaluator.run_eval()
 
