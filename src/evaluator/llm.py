@@ -64,7 +64,7 @@ class LLMAnswerGenerator:
     def generate_prompt(self, question_with_options: str, context_docs: list) -> str:
         formatted_context = "\n".join([f"[{i + 1}] {doc}" for i, doc in enumerate(context_docs)])
 
-        prompt = f""".
+        prompt = f"""
         Context Documents:
         {formatted_context}
 

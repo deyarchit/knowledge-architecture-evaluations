@@ -7,7 +7,7 @@ load_dotenv()
 
 
 def pre_process_data():
-    # process_ap_history_data()
+    data.process_ap_history_data()
     data.process_ap_history_solution_guide()
 
 

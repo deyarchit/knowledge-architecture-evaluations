@@ -93,9 +93,7 @@ class VectorSearch:
             try:
                 element_idx = int(element_idx)
             except ValueError:
-                raise RuntimeError(
-                    f"'corpus_id' is not a valid integer. Using original value: {element_idx}"
-                )
+                raise RuntimeError(f"'corpus_id' is not a valid integer: {element_idx}")
             final_results.append(search_results[element_idx])
 
         return final_results

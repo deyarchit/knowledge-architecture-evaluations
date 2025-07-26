@@ -15,7 +15,7 @@ dependencies = [
     "pypdf>=5.8.0",
     "ratelimit>=2.2.1",
     "rich>=14.0.0",
-    "sentence-transformers>=5.0.0",
+    "sentence-transformers>=5.0.0,<6.0.0",
     "unstructured[pdf]>=0.18.11",
 ]
 
@@ -27,7 +27,7 @@ dependencies = [
 dev = [
     "ipykernel>=6.30.0",
     "mypy>=1.17.0",
- "pyright>=1.1.403",
- "pytest>=8.4.1",
- "ruff>=0.12.3",
+    "pyright>=1.1.403",
+    "pytest>=8.4.1",
+    "ruff>=0.12.3",
 ]

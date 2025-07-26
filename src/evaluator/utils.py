@@ -25,4 +25,4 @@ def get_data_path(filename: str) -> Path:
 
 
 def get_normalized_model_name(model_name: str) -> str:
-    return "".join(model_name.split("/")[-1])
+    return model_name.split("/")[-1]

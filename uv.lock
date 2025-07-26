@@ -636,7 +636,7 @@ requires-dist = [
     { name = "pypdf", specifier = ">=5.8.0" },
     { name = "ratelimit", specifier = ">=2.2.1" },
     { name = "rich", specifier = ">=14.0.0" },
-    { name = "sentence-transformers", specifier = ">=5.0.0" },
+    { name = "sentence-transformers", specifier = ">=5.0.0,<6.0.0" },
     { name = "unstructured", extras = ["pdf"], specifier = ">=0.18.11" },
 ]
 
