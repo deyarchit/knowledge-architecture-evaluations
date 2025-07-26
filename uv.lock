@@ -614,6 +614,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "pypdf" },
     { name = "ratelimit" },
+    { name = "rich" },
     { name = "sentence-transformers" },
     { name = "unstructured", extra = ["pdf"] },
 ]
@@ -634,6 +635,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.11.7" },
     { name = "pypdf", specifier = ">=5.8.0" },
     { name = "ratelimit", specifier = ">=2.2.1" },
+    { name = "rich", specifier = ">=14.0.0" },
     { name = "sentence-transformers", specifier = ">=5.0.0" },
     { name = "unstructured", extras = ["pdf"], specifier = ">=0.18.11" },
 ]

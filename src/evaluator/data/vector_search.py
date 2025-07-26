@@ -29,6 +29,7 @@ class SearchConfiguration:
     embedding_model: str = "all-MiniLM-L6-v2"
     enable_reranking: bool = False
     cross_encoding_model: str = "cross-encoder/ms-marco-MiniLM-L6-v2"
+    chunking_style: str = "title_chunking"
 
 
 class VectorSearch:
@@ -48,7 +49,7 @@ class VectorSearch:
         )
 
         # Load chunks
-        chunk_file = get_data_path("processed/ap_history_concepts.json")
+        chunk_file = get_data_path(f"processed/ap_history_concepts_{config.chunking_style}.json")
         concepts: Concepts | None = read_json_from_file(chunk_file, Concepts)
         if not concepts:
             raise RuntimeError(f"No concepts found in file: {chunk_file}")

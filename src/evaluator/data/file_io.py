@@ -5,7 +5,7 @@ from typing import Dict, Optional, Type, TypeVar
 
 from pydantic import BaseModel
 from pypdf import PdfReader
-from unstructured.chunking.title import chunk_by_title
+from unstructured.chunking.basic import chunk_elements
 from unstructured.partition.pdf import partition_pdf
 
 from evaluator.models.qa import QA, Concepts, QACollection
@@ -71,8 +71,15 @@ def _use_unstructured(pdf_file: Path):
 
         elements_cleaned.append(element)
 
-    chunks = chunk_by_title(
-        elements_cleaned, combine_text_under_n_chars=50, max_characters=1000, new_after_n_chars=800
+    # chunks = chunk_by_title(
+    #     elements_cleaned, combine_text_under_n_chars=50, max_characters=1000, new_after_n_chars=800
+    # )
+
+    chunks = chunk_elements(
+        elements_cleaned,
+        max_characters=1000,
+        new_after_n_chars=800,  # soft-max
+        overlap=100,  # helps retain semantic meaning from surrounding sentences
     )
 
     return (chunk.text for chunk in chunks)

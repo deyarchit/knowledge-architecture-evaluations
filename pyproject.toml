@@ -14,6 +14,7 @@ dependencies = [
     "pydantic>=2.11.7",
     "pypdf>=5.8.0",
     "ratelimit>=2.2.1",
+    "rich>=14.0.0",
     "sentence-transformers>=5.0.0",
     "unstructured[pdf]>=0.18.11",
 ]

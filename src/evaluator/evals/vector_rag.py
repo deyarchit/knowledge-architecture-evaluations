@@ -4,6 +4,8 @@ from itertools import islice
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from rich.progress import track
+
 from evaluator.data.file_io import (
     load_ap_history_qa_set,
     read_json_from_file,
@@ -26,12 +28,26 @@ class Strategy:
 strategy_baseline = Strategy(
     name="strategy_baseline",
     description="",
-    vector_search_config=SearchConfiguration(max_results=3, enable_reranking=False),
+    vector_search_config=SearchConfiguration(
+        max_results=3, enable_reranking=False, chunking_style="title_chunking"
+    ),
 )
 strategy_with_reranking = Strategy(
     name="strategy_with_reranking",
     description="",
-    vector_search_config=SearchConfiguration(max_results=3, enable_reranking=True),
+    vector_search_config=SearchConfiguration(
+        max_results=3, enable_reranking=True, chunking_style="title_chunking"
+    ),
+)
+
+strategy_with_reranking_with_basic_chunking = Strategy(
+    name="strategy_with_reranking_with_basic_chunking",
+    description="",
+    vector_search_config=SearchConfiguration(
+        max_results=3,
+        enable_reranking=True,
+        chunking_style="basic_chunking",
+    ),
 )
 
 
@@ -105,7 +121,11 @@ class VectorRAGEval:
                 print(f"{model_name_str}: Loaded the already existing output")
 
         # Capture responses for unanswered questions
-        for q_number in islice(self._qa_set, self.max_questions):
+        questions_to_answer = [q_number for q_number in islice(self._qa_set, self.max_questions)]
+
+        for q_number in track(
+            questions_to_answer, description=f"{model_name_str}: Generating answers"
+        ):
             if (
                 q_number in model_response_set and model_response_set[q_number].answer != ""
             ):  # Skip if already answered

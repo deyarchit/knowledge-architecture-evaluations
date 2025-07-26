@@ -1,0 +1,580 @@
+{
+  "qa_map": {
+    "0": {
+      "question": "",
+      "answer": "C"
+    },
+    "1": {
+      "question": "",
+      "answer": "C"
+    },
+    "2": {
+      "question": "",
+      "answer": "B"
+    },
+    "3": {
+      "question": "",
+      "answer": "C"
+    },
+    "4": {
+      "question": "",
+      "answer": "A"
+    },
+    "5": {
+      "question": "",
+      "answer": "B"
+    },
+    "6": {
+      "question": "",
+      "answer": "B"
+    },
+    "7": {
+      "question": "",
+      "answer": "THE RUSSIAN TZAR"
+    },
+    "8": {
+      "question": "",
+      "answer": "B"
+    },
+    "9": {
+      "question": "",
+      "answer": "C"
+    },
+    "10": {
+      "question": "",
+      "answer": "B"
+    },
+    "11": {
+      "question": "",
+      "answer": "D"
+    },
+    "12": {
+      "question": "",
+      "answer": "THE TRADING NETWORK IN ASIA WAS DIVIDED INTO THREE ZONES – ARAB, INDIAN, AND CHINESE."
+    },
+    "13": {
+      "question": "",
+      "answer": "C"
+    },
+    "14": {
+      "question": "",
+      "answer": "HE REORGANIZED THE BUREAUCRACY BUT DID NOT TOUCH THE MILITARY."
+    },
+    "15": {
+      "question": "",
+      "answer": "C"
+    },
+    "16": {
+      "question": "",
+      "answer": "B"
+    },
+    "17": {
+      "question": "",
+      "answer": "B"
+    },
+    "18": {
+      "question": "",
+      "answer": "D"
+    },
+    "19": {
+      "question": "",
+      "answer": "C"
+    },
+    "20": {
+      "question": "",
+      "answer": "C"
+    },
+    "21": {
+      "question": "",
+      "answer": "C"
+    },
+    "22": {
+      "question": "",
+      "answer": "C"
+    },
+    "23": {
+      "question": "",
+      "answer": "C"
+    },
+    "24": {
+      "question": "",
+      "answer": "C"
+    },
+    "25": {
+      "question": "",
+      "answer": "C"
+    },
+    "26": {
+      "question": "",
+      "answer": "D"
+    },
+    "27": {
+      "question": "",
+      "answer": "D"
+    },
+    "28": {
+      "question": "",
+      "answer": "C"
+    },
+    "29": {
+      "question": "",
+      "answer": "C"
+    },
+    "30": {
+      "question": "",
+      "answer": "C"
+    },
+    "31": {
+      "question": "",
+      "answer": "B"
+    },
+    "32": {
+      "question": "",
+      "answer": "B"
+    },
+    "33": {
+      "question": "",
+      "answer": "B"
+    },
+    "34": {
+      "question": "",
+      "answer": "D"
+    },
+    "35": {
+      "question": "",
+      "answer": "D"
+    },
+    "36": {
+      "question": "",
+      "answer": "C"
+    },
+    "37": {
+      "question": "",
+      "answer": "C"
+    },
+    "38": {
+      "question": "",
+      "answer": "B"
+    },
+    "39": {
+      "question": "",
+      "answer": "B"
+    },
+    "40": {
+      "question": "",
+      "answer": "B"
+    },
+    "41": {
+      "question": "",
+      "answer": "C"
+    },
+    "42": {
+      "question": "",
+      "answer": "C"
+    },
+    "43": {
+      "question": "",
+      "answer": "D"
+    },
+    "44": {
+      "question": "",
+      "answer": "B"
+    },
+    "45": {
+      "question": "",
+      "answer": "D"
+    },
+    "46": {
+      "question": "",
+      "answer": "B"
+    },
+    "47": {
+      "question": "",
+      "answer": "B"
+    },
+    "48": {
+      "question": "",
+      "answer": "B"
+    },
+    "49": {
+      "question": "",
+      "answer": "B"
+    },
+    "50": {
+      "question": "",
+      "answer": "C"
+    },
+    "51": {
+      "question": "",
+      "answer": "B"
+    },
+    "52": {
+      "question": "",
+      "answer": "B"
+    },
+    "53": {
+      "question": "",
+      "answer": "B"
+    },
+    "54": {
+      "question": "",
+      "answer": "C"
+    },
+    "55": {
+      "question": "",
+      "answer": "C"
+    },
+    "56": {
+      "question": "",
+      "answer": "B"
+    },
+    "57": {
+      "question": "",
+      "answer": "B"
+    },
+    "58": {
+      "question": "",
+      "answer": "B"
+    },
+    "59": {
+      "question": "",
+      "answer": "D"
+    },
+    "60": {
+      "question": "",
+      "answer": "B"
+    },
+    "61": {
+      "question": "",
+      "answer": "B"
+    },
+    "62": {
+      "question": "",
+      "answer": "C"
+    },
+    "63": {
+      "question": "",
+      "answer": "B"
+    },
+    "64": {
+      "question": "",
+      "answer": "C"
+    },
+    "65": {
+      "question": "",
+      "answer": "C"
+    },
+    "66": {
+      "question": "",
+      "answer": "THE ARABIAN PENINSULA, IRAQ, AND JAPAN"
+    },
+    "67": {
+      "question": "",
+      "answer": "C"
+    },
+    "68": {
+      "question": "",
+      "answer": "C"
+    },
+    "69": {
+      "question": "",
+      "answer": "B"
+    },
+    "70": {
+      "question": "",
+      "answer": "C"
+    },
+    "71": {
+      "question": "",
+      "answer": "B"
+    },
+    "72": {
+      "question": "",
+      "answer": "B"
+    },
+    "73": {
+      "question": "",
+      "answer": "B"
+    },
+    "74": {
+      "question": "",
+      "answer": "B"
+    },
+    "75": {
+      "question": "",
+      "answer": "C"
+    },
+    "76": {
+      "question": "",
+      "answer": "C"
+    },
+    "77": {
+      "question": "",
+      "answer": "B"
+    },
+    "78": {
+      "question": "",
+      "answer": "C"
+    },
+    "79": {
+      "question": "",
+      "answer": "C"
+    },
+    "80": {
+      "question": "",
+      "answer": "D"
+    },
+    "81": {
+      "question": "",
+      "answer": "C"
+    },
+    "82": {
+      "question": "",
+      "answer": "B"
+    },
+    "83": {
+      "question": "",
+      "answer": "C"
+    },
+    "84": {
+      "question": "",
+      "answer": "C"
+    },
+    "85": {
+      "question": "",
+      "answer": "THEIR ABILITY TO RIDE DAYS ON END WITHOUT EATING."
+    },
+    "86": {
+      "question": "",
+      "answer": "C"
+    },
+    "87": {
+      "question": "",
+      "answer": "D"
+    },
+    "88": {
+      "question": "",
+      "answer": "C"
+    },
+    "89": {
+      "question": "",
+      "answer": "C"
+    },
+    "90": {
+      "question": "",
+      "answer": "D"
+    },
+    "91": {
+      "question": "",
+      "answer": "D"
+    },
+    "92": {
+      "question": "",
+      "answer": "C"
+    },
+    "93": {
+      "question": "",
+      "answer": "D"
+    },
+    "94": {
+      "question": "",
+      "answer": "A"
+    },
+    "95": {
+      "question": "",
+      "answer": "C"
+    },
+    "96": {
+      "question": "",
+      "answer": "D"
+    },
+    "97": {
+      "question": "",
+      "answer": "C"
+    },
+    "98": {
+      "question": "",
+      "answer": "D"
+    },
+    "99": {
+      "question": "",
+      "answer": "C"
+    },
+    "100": {
+      "question": "",
+      "answer": "B"
+    },
+    "101": {
+      "question": "",
+      "answer": "B"
+    },
+    "102": {
+      "question": "",
+      "answer": "B"
+    },
+    "103": {
+      "question": "",
+      "answer": "C"
+    },
+    "104": {
+      "question": "",
+      "answer": "C"
+    },
+    "105": {
+      "question": "",
+      "answer": "C"
+    },
+    "106": {
+      "question": "",
+      "answer": "B"
+    },
+    "107": {
+      "question": "",
+      "answer": "C"
+    },
+    "108": {
+      "question": "",
+      "answer": "C"
+    },
+    "109": {
+      "question": "",
+      "answer": "D"
+    },
+    "110": {
+      "question": "",
+      "answer": "E"
+    },
+    "111": {
+      "question": "",
+      "answer": "B"
+    },
+    "112": {
+      "question": "",
+      "answer": "B"
+    },
+    "113": {
+      "question": "",
+      "answer": "C"
+    },
+    "114": {
+      "question": "",
+      "answer": "C"
+    },
+    "115": {
+      "question": "",
+      "answer": "C"
+    },
+    "116": {
+      "question": "",
+      "answer": "C"
+    },
+    "117": {
+      "question": "",
+      "answer": "B"
+    },
+    "118": {
+      "question": "",
+      "answer": "C"
+    },
+    "119": {
+      "question": "",
+      "answer": "B"
+    },
+    "120": {
+      "question": "",
+      "answer": "A"
+    },
+    "121": {
+      "question": "",
+      "answer": "D"
+    },
+    "122": {
+      "question": "",
+      "answer": "C"
+    },
+    "123": {
+      "question": "",
+      "answer": "B"
+    },
+    "124": {
+      "question": "",
+      "answer": "C"
+    },
+    "125": {
+      "question": "",
+      "answer": "B"
+    },
+    "126": {
+      "question": "",
+      "answer": "B"
+    },
+    "127": {
+      "question": "",
+      "answer": "A"
+    },
+    "128": {
+      "question": "",
+      "answer": "C"
+    },
+    "129": {
+      "question": "",
+      "answer": "C"
+    },
+    "130": {
+      "question": "",
+      "answer": "C"
+    },
+    "131": {
+      "question": "",
+      "answer": "C"
+    },
+    "132": {
+      "question": "",
+      "answer": "B"
+    },
+    "133": {
+      "question": "",
+      "answer": "B"
+    },
+    "134": {
+      "question": "",
+      "answer": "C"
+    },
+    "135": {
+      "question": "",
+      "answer": "C"
+    },
+    "136": {
+      "question": "",
+      "answer": "C"
+    },
+    "137": {
+      "question": "",
+      "answer": "C"
+    },
+    "138": {
+      "question": "",
+      "answer": "B"
+    },
+    "139": {
+      "question": "",
+      "answer": "E"
+    },
+    "140": {
+      "question": "",
+      "answer": "C"
+    },
+    "141": {
+      "question": "",
+      "answer": "C"
+    },
+    "142": {
+      "question": "",
+      "answer": "C"
+    },
+    "143": {
+      "question": "",
+      "answer": "B"
+    }
+  }
+}
