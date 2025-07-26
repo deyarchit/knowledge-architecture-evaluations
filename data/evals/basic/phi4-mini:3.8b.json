@@ -1,0 +1,580 @@
+{
+  "qa_map": {
+    "0": {
+      "question": "",
+      "answer": "B"
+    },
+    "1": {
+      "question": "",
+      "answer": "C"
+    },
+    "2": {
+      "question": "",
+      "answer": "A"
+    },
+    "3": {
+      "question": "",
+      "answer": "C"
+    },
+    "4": {
+      "question": "",
+      "answer": "E"
+    },
+    "5": {
+      "question": "",
+      "answer": "A"
+    },
+    "6": {
+      "question": "",
+      "answer": "E"
+    },
+    "7": {
+      "question": "",
+      "answer": "D"
+    },
+    "8": {
+      "question": "",
+      "answer": "C"
+    },
+    "9": {
+      "question": "",
+      "answer": "A"
+    },
+    "10": {
+      "question": "",
+      "answer": "E"
+    },
+    "11": {
+      "question": "",
+      "answer": "E"
+    },
+    "12": {
+      "question": "",
+      "answer": "E"
+    },
+    "13": {
+      "question": "",
+      "answer": "B"
+    },
+    "14": {
+      "question": "",
+      "answer": "E"
+    },
+    "15": {
+      "question": "",
+      "answer": "C"
+    },
+    "16": {
+      "question": "",
+      "answer": "E"
+    },
+    "17": {
+      "question": "",
+      "answer": "B"
+    },
+    "18": {
+      "question": "",
+      "answer": "A"
+    },
+    "19": {
+      "question": "",
+      "answer": "B"
+    },
+    "20": {
+      "question": "",
+      "answer": "B"
+    },
+    "21": {
+      "question": "",
+      "answer": "D"
+    },
+    "22": {
+      "question": "",
+      "answer": "A"
+    },
+    "23": {
+      "question": "",
+      "answer": "B"
+    },
+    "24": {
+      "question": "",
+      "answer": "E"
+    },
+    "25": {
+      "question": "",
+      "answer": "B"
+    },
+    "26": {
+      "question": "",
+      "answer": "B"
+    },
+    "27": {
+      "question": "",
+      "answer": "C"
+    },
+    "28": {
+      "question": "",
+      "answer": "B"
+    },
+    "29": {
+      "question": "",
+      "answer": "C"
+    },
+    "30": {
+      "question": "",
+      "answer": "B"
+    },
+    "31": {
+      "question": "",
+      "answer": "A"
+    },
+    "32": {
+      "question": "",
+      "answer": "C"
+    },
+    "33": {
+      "question": "",
+      "answer": "C"
+    },
+    "34": {
+      "question": "",
+      "answer": "C"
+    },
+    "35": {
+      "question": "",
+      "answer": "E"
+    },
+    "36": {
+      "question": "",
+      "answer": "B"
+    },
+    "37": {
+      "question": "",
+      "answer": "C"
+    },
+    "38": {
+      "question": "",
+      "answer": "E"
+    },
+    "39": {
+      "question": "",
+      "answer": "B"
+    },
+    "40": {
+      "question": "",
+      "answer": "B"
+    },
+    "41": {
+      "question": "",
+      "answer": "D"
+    },
+    "42": {
+      "question": "",
+      "answer": "E"
+    },
+    "43": {
+      "question": "",
+      "answer": "E"
+    },
+    "44": {
+      "question": "",
+      "answer": "E"
+    },
+    "45": {
+      "question": "",
+      "answer": "E"
+    },
+    "46": {
+      "question": "",
+      "answer": "B"
+    },
+    "47": {
+      "question": "",
+      "answer": "D"
+    },
+    "48": {
+      "question": "",
+      "answer": "A"
+    },
+    "49": {
+      "question": "",
+      "answer": "B"
+    },
+    "50": {
+      "question": "",
+      "answer": "E"
+    },
+    "51": {
+      "question": "",
+      "answer": "E"
+    },
+    "52": {
+      "question": "",
+      "answer": "B"
+    },
+    "53": {
+      "question": "",
+      "answer": "C"
+    },
+    "54": {
+      "question": "",
+      "answer": "D"
+    },
+    "55": {
+      "question": "",
+      "answer": "B"
+    },
+    "56": {
+      "question": "",
+      "answer": "A"
+    },
+    "57": {
+      "question": "",
+      "answer": "D"
+    },
+    "58": {
+      "question": "",
+      "answer": "A"
+    },
+    "59": {
+      "question": "",
+      "answer": "D"
+    },
+    "60": {
+      "question": "",
+      "answer": "A"
+    },
+    "61": {
+      "question": "",
+      "answer": "B"
+    },
+    "62": {
+      "question": "",
+      "answer": "E"
+    },
+    "63": {
+      "question": "",
+      "answer": "E"
+    },
+    "64": {
+      "question": "",
+      "answer": "B"
+    },
+    "65": {
+      "question": "",
+      "answer": "E"
+    },
+    "66": {
+      "question": "",
+      "answer": "C"
+    },
+    "67": {
+      "question": "",
+      "answer": "C"
+    },
+    "68": {
+      "question": "",
+      "answer": "D"
+    },
+    "69": {
+      "question": "",
+      "answer": "A"
+    },
+    "70": {
+      "question": "",
+      "answer": "D"
+    },
+    "71": {
+      "question": "",
+      "answer": "B"
+    },
+    "72": {
+      "question": "",
+      "answer": "A"
+    },
+    "73": {
+      "question": "",
+      "answer": "A"
+    },
+    "74": {
+      "question": "",
+      "answer": "A"
+    },
+    "75": {
+      "question": "",
+      "answer": "D"
+    },
+    "76": {
+      "question": "",
+      "answer": "E"
+    },
+    "77": {
+      "question": "",
+      "answer": "C"
+    },
+    "78": {
+      "question": "",
+      "answer": "B"
+    },
+    "79": {
+      "question": "",
+      "answer": "C"
+    },
+    "80": {
+      "question": "",
+      "answer": "B"
+    },
+    "81": {
+      "question": "",
+      "answer": "D"
+    },
+    "82": {
+      "question": "",
+      "answer": "A"
+    },
+    "83": {
+      "question": "",
+      "answer": "A"
+    },
+    "84": {
+      "question": "",
+      "answer": "C"
+    },
+    "85": {
+      "question": "",
+      "answer": "B"
+    },
+    "86": {
+      "question": "",
+      "answer": "D"
+    },
+    "87": {
+      "question": "",
+      "answer": "B"
+    },
+    "88": {
+      "question": "",
+      "answer": "C"
+    },
+    "89": {
+      "question": "",
+      "answer": "A"
+    },
+    "90": {
+      "question": "",
+      "answer": "A"
+    },
+    "91": {
+      "question": "",
+      "answer": "B"
+    },
+    "92": {
+      "question": "",
+      "answer": "A"
+    },
+    "93": {
+      "question": "",
+      "answer": "D"
+    },
+    "94": {
+      "question": "",
+      "answer": "B"
+    },
+    "95": {
+      "question": "",
+      "answer": "D"
+    },
+    "96": {
+      "question": "",
+      "answer": "A"
+    },
+    "97": {
+      "question": "",
+      "answer": "E"
+    },
+    "98": {
+      "question": "",
+      "answer": "C"
+    },
+    "99": {
+      "question": "",
+      "answer": "B"
+    },
+    "100": {
+      "question": "",
+      "answer": "D"
+    },
+    "101": {
+      "question": "",
+      "answer": "D"
+    },
+    "102": {
+      "question": "",
+      "answer": "A"
+    },
+    "103": {
+      "question": "",
+      "answer": "C"
+    },
+    "104": {
+      "question": "",
+      "answer": "B"
+    },
+    "105": {
+      "question": "",
+      "answer": "A"
+    },
+    "106": {
+      "question": "",
+      "answer": "A"
+    },
+    "107": {
+      "question": "",
+      "answer": "D"
+    },
+    "108": {
+      "question": "",
+      "answer": "A"
+    },
+    "109": {
+      "question": "",
+      "answer": "B"
+    },
+    "110": {
+      "question": "",
+      "answer": "E"
+    },
+    "111": {
+      "question": "",
+      "answer": "D"
+    },
+    "112": {
+      "question": "",
+      "answer": "D"
+    },
+    "113": {
+      "question": "",
+      "answer": "A"
+    },
+    "114": {
+      "question": "",
+      "answer": "B"
+    },
+    "115": {
+      "question": "",
+      "answer": "E"
+    },
+    "116": {
+      "question": "",
+      "answer": "A"
+    },
+    "117": {
+      "question": "",
+      "answer": "A"
+    },
+    "118": {
+      "question": "",
+      "answer": "D"
+    },
+    "119": {
+      "question": "",
+      "answer": "B"
+    },
+    "120": {
+      "question": "",
+      "answer": "E"
+    },
+    "121": {
+      "question": "",
+      "answer": "E"
+    },
+    "122": {
+      "question": "",
+      "answer": "A"
+    },
+    "123": {
+      "question": "",
+      "answer": "B"
+    },
+    "124": {
+      "question": "",
+      "answer": "A"
+    },
+    "125": {
+      "question": "",
+      "answer": "C"
+    },
+    "126": {
+      "question": "",
+      "answer": "E"
+    },
+    "127": {
+      "question": "",
+      "answer": "D"
+    },
+    "128": {
+      "question": "",
+      "answer": "C"
+    },
+    "129": {
+      "question": "",
+      "answer": "B"
+    },
+    "130": {
+      "question": "",
+      "answer": "E"
+    },
+    "131": {
+      "question": "",
+      "answer": "B"
+    },
+    "132": {
+      "question": "",
+      "answer": "A"
+    },
+    "133": {
+      "question": "",
+      "answer": "A"
+    },
+    "134": {
+      "question": "",
+      "answer": "B"
+    },
+    "135": {
+      "question": "",
+      "answer": "C"
+    },
+    "136": {
+      "question": "",
+      "answer": "E"
+    },
+    "137": {
+      "question": "",
+      "answer": "C"
+    },
+    "138": {
+      "question": "",
+      "answer": "E"
+    },
+    "139": {
+      "question": "",
+      "answer": "C"
+    },
+    "140": {
+      "question": "",
+      "answer": "D"
+    },
+    "141": {
+      "question": "",
+      "answer": "D"
+    },
+    "142": {
+      "question": "",
+      "answer": "B"
+    },
+    "143": {
+      "question": "",
+      "answer": "A"
+    }
+  }
+}

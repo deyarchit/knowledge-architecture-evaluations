@@ -14,3 +14,7 @@ def default_qa():
 
 class QACollection(BaseModel):
     qa_map: Dict[int, QA]
+
+
+class Concepts(BaseModel):
+    chunks: Dict[str, str]

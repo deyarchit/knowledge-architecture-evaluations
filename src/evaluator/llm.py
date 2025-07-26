@@ -1,3 +1,5 @@
+from typing import Optional
+
 from litellm import CustomStreamWrapper, completion
 from litellm.types.utils import StreamingChoices
 from ratelimit import limits, sleep_and_retry  # type: ignore
@@ -33,9 +35,10 @@ class LLMAnswerGenerator:
             calls, period = 60, 60
         return (calls, period)
 
-    def generate(self, question: str) -> LLMResponse:
-        # The decorator applied in __init__ handles rate limiting automatically.
-        # No 'with' block is needed.
+    def generate(self, question: str, context: Optional[list] = None) -> LLMResponse:
+        if context:
+            question = self.generate_prompt(question, context)
+
         response = completion(
             model=self.model_name,
             response_format=LLMResponse,
@@ -57,3 +60,15 @@ class LLMAnswerGenerator:
             raise ValueError("LLM response content is None")
 
         return LLMResponse.model_validate_json(content)
+
+    def generate_prompt(self, question_with_options: str, context_docs: list) -> str:
+        formatted_context = "\n".join([f"[{i + 1}] {doc}" for i, doc in enumerate(context_docs)])
+
+        prompt = f"""
+        Context Documents:
+        {formatted_context}
+
+        Question:
+        {question_with_options}
+        """
+        return prompt.strip()

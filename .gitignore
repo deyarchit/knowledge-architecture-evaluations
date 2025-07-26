@@ -13,3 +13,4 @@ wheels/
 .env
 **/raw/**
 .notes
+**/.DS_Store
