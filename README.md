@@ -1,8 +1,8 @@
 ## Knowledge Evaluations for building AI Agents
 
-The objective of this project is to evaluate the effectiveness of various knowledge architectures for LLM powered AI agents. In other words, the goal is to measure the effectiveness of knowledge storage and retrieval strategies to aid the LLM vs focusing on the capabilities of the LLM itself.
+The objective of this project is to evaluate the effectiveness of various knowledge architectures for LLM-powered AI agents. In other words, the goal is to measure the effectiveness of knowledge storage and retrieval strategies to aid the LLM vs focusing on the capabilities of the LLM itself.
 
-To perform the series of knowledge evaluations we will be questioning the LLMs on a set of multiple choice questions testing the knowledge of AP history. Since this knowledge is very foundational for functioning of LLMs, larger models with more parametric memory have internalized it already; even without any additional context models like `Gemini 2.0/2.5 Flash` are able to score > 95% on this question set. So, for the purposes of evaluating the effectiveness of knowledge architecture, we will be using LLM models whcih are less than 4B parameters to increase the likelyhood of LLMs having to rely on provided context to answer the given questions.
+To perform the series of knowledge evaluations we will be questioning the LLMs on a set of multiple choice questions testing the knowledge of AP history. Since this knowledge is very foundational for functioning of LLMs, larger models with more parametric memory have internalized it already; even without any additional context models like `Gemini 2.0/2.5 Flash` are able to score > 95% on this question set. So, for the purposes of evaluating the effectiveness of knowledge architecture, we will be using LLM models which are smaller than 4B parameters to increase the likelihood that the LLM must rely on the provided context to answer the given questions.
 
 ### Overview of results
 
