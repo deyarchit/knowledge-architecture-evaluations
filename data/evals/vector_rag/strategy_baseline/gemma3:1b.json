@@ -34,7 +34,7 @@
     },
     "8": {
       "question": "",
-      "answer": "WESTERN EUROPE"
+      "answer": "B"
     },
     "9": {
       "question": "",
@@ -418,7 +418,7 @@
     },
     "104": {
       "question": "",
-      "answer": "CITIES SERVED THE NEEDS OF THEIR INHABITANTS AND IMMEDIATE NEIGHBORS"
+      "answer": "A"
     },
     "105": {
       "question": "",
@@ -470,7 +470,7 @@
     },
     "117": {
       "question": "",
-      "answer": "INDO-EUROPEAN"
+      "answer": "A"
     },
     "118": {
       "question": "",
@@ -575,6 +575,274 @@
     "143": {
       "question": "",
       "answer": "C"
+    },
+    "144": {
+      "question": "",
+      "answer": "B"
+    },
+    "145": {
+      "question": "",
+      "answer": "C"
+    },
+    "146": {
+      "question": "",
+      "answer": "B"
+    },
+    "147": {
+      "question": "",
+      "answer": "D"
+    },
+    "148": {
+      "question": "",
+      "answer": "B"
+    },
+    "149": {
+      "question": "",
+      "answer": "D"
+    },
+    "150": {
+      "question": "",
+      "answer": "B"
+    },
+    "151": {
+      "question": "",
+      "answer": "C"
+    },
+    "152": {
+      "question": "",
+      "answer": "C"
+    },
+    "153": {
+      "question": "",
+      "answer": "C"
+    },
+    "154": {
+      "question": "",
+      "answer": "D"
+    },
+    "155": {
+      "question": "",
+      "answer": "B"
+    },
+    "156": {
+      "question": "",
+      "answer": "B"
+    },
+    "157": {
+      "question": "",
+      "answer": "C"
+    },
+    "158": {
+      "question": "",
+      "answer": "B"
+    },
+    "159": {
+      "question": "",
+      "answer": "D"
+    },
+    "160": {
+      "question": "",
+      "answer": "C"
+    },
+    "161": {
+      "question": "",
+      "answer": "B"
+    },
+    "162": {
+      "question": "",
+      "answer": "D"
+    },
+    "163": {
+      "question": "",
+      "answer": "D"
+    },
+    "164": {
+      "question": "",
+      "answer": "C"
+    },
+    "165": {
+      "question": "",
+      "answer": "C"
+    },
+    "166": {
+      "question": "",
+      "answer": "B"
+    },
+    "167": {
+      "question": "",
+      "answer": "D"
+    },
+    "168": {
+      "question": "",
+      "answer": "B"
+    },
+    "169": {
+      "question": "",
+      "answer": "C"
+    },
+    "170": {
+      "question": "",
+      "answer": "C"
+    },
+    "171": {
+      "question": "",
+      "answer": "D"
+    },
+    "172": {
+      "question": "",
+      "answer": "B"
+    },
+    "173": {
+      "question": "",
+      "answer": "C"
+    },
+    "174": {
+      "question": "",
+      "answer": "B"
+    },
+    "175": {
+      "question": "",
+      "answer": "A"
+    },
+    "176": {
+      "question": "",
+      "answer": "C"
+    },
+    "177": {
+      "question": "",
+      "answer": "C"
+    },
+    "178": {
+      "question": "",
+      "answer": "B"
+    },
+    "179": {
+      "question": "",
+      "answer": "D"
+    },
+    "180": {
+      "question": "",
+      "answer": "D"
+    },
+    "181": {
+      "question": "",
+      "answer": "C"
+    },
+    "182": {
+      "question": "",
+      "answer": "B"
+    },
+    "183": {
+      "question": "",
+      "answer": "D"
+    },
+    "184": {
+      "question": "",
+      "answer": "B"
+    },
+    "185": {
+      "question": "",
+      "answer": "C"
+    },
+    "186": {
+      "question": "",
+      "answer": "C"
+    },
+    "187": {
+      "question": "",
+      "answer": "THE DESIRE OF NOBILITY TO BECOME MORE INVOLVED IN TRADE"
+    },
+    "188": {
+      "question": "",
+      "answer": "B"
+    },
+    "189": {
+      "question": "",
+      "answer": "D"
+    },
+    "190": {
+      "question": "",
+      "answer": "D"
+    },
+    "191": {
+      "question": "",
+      "answer": "C"
+    },
+    "192": {
+      "question": "",
+      "answer": "B"
+    },
+    "193": {
+      "question": "",
+      "answer": "C"
+    },
+    "194": {
+      "question": "",
+      "answer": "C"
+    },
+    "195": {
+      "question": "",
+      "answer": "D"
+    },
+    "196": {
+      "question": "",
+      "answer": "B"
+    },
+    "197": {
+      "question": "",
+      "answer": "C"
+    },
+    "198": {
+      "question": "",
+      "answer": "C"
+    },
+    "199": {
+      "question": "",
+      "answer": "C"
+    },
+    "200": {
+      "question": "",
+      "answer": "B"
+    },
+    "201": {
+      "question": "",
+      "answer": "C"
+    },
+    "202": {
+      "question": "",
+      "answer": "C"
+    },
+    "203": {
+      "question": "",
+      "answer": "D"
+    },
+    "204": {
+      "question": "",
+      "answer": "D"
+    },
+    "205": {
+      "question": "",
+      "answer": "D"
+    },
+    "206": {
+      "question": "",
+      "answer": "B"
+    },
+    "207": {
+      "question": "",
+      "answer": "C"
+    },
+    "208": {
+      "question": "",
+      "answer": "B"
+    },
+    "209": {
+      "question": "",
+      "answer": "D"
+    },
+    "210": {
+      "question": "",
+      "answer": "B"
     }
   }
 }

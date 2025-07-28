@@ -32,7 +32,7 @@ class LLMAnswerGenerator:
         elif self.model_name.startswith("openai") or self.model_name.startswith("gpt"):
             calls, period = 8, 60
         else:
-            calls, period = 60, 60
+            calls, period = 90, 60
         return (calls, period)
 
     def generate(self, question: str, context: Optional[list] = None) -> LLMResponse:

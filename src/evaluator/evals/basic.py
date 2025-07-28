@@ -3,6 +3,8 @@ from itertools import islice
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from rich.progress import track
+
 from evaluator.data.file_io import (
     load_ap_history_qa_set,
     read_json_from_file,
@@ -73,8 +75,11 @@ class BasicEval:
                 model_response_set = existing_collection.qa_map
                 print(f"{model_name_str}: Loaded the already existing output")
 
-        # Capture responses for unanswered questions
-        for q_number in islice(self._qa_set, self.max_questions):
+        questions_to_answer = [q_number for q_number in islice(self._qa_set, self.max_questions)]
+
+        for q_number in track(
+            questions_to_answer, description=f"{model_name_str}: Generating answers"
+        ):
             if (
                 q_number in model_response_set and model_response_set[q_number].answer != ""
             ):  # Skip if already answered
