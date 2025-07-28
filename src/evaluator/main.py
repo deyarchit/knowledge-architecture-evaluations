@@ -36,7 +36,8 @@ def main():
     vector_rag_evaluator.run_eval()
 
     vector_rag_evaluator = vector_rag.VectorRAGEval(
-        models=model_list, strategy=vector_rag.strategy_with_reranking_with_basic_chunking
+        models=model_list,
+        strategy=vector_rag.strategy_with_reranking_with_basic_chunking,
     )
     vector_rag_evaluator.run_eval()
 
