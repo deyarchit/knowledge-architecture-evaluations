@@ -4,7 +4,7 @@ The objective of this project is to evaluate the effectiveness of various knowle
 
 To perform the series of knowledge evaluations we will be questioning the LLMs on a set of multiple choice questions testing the knowledge of AP history. Since this knowledge is very foundational for functioning of LLMs, larger models with more parametric memory have internalized it already; even without any additional context models like `Gemini 2.0/2.5 Flash` are able to score > 95% on this question set. So, for the purposes of evaluating the effectiveness of knowledge architecture, we will be using LLM models which are smaller than 4B parameters to increase the likelihood that the LLM must rely on the provided context to answer the given questions.
 
-### Overview of results
+## Overview of results
 
 | Model       | Baseline Score | Vector RAG |Vector RAG (with re-ranking) |
 |----------   |----------      |----------  |----------|
@@ -15,14 +15,16 @@ To perform the series of knowledge evaluations we will be questioning the LLMs o
 |gemma3:4b |(60.66%)|(58.29%) |(59.72%)|
 |phi4-mini:3.8b |(68.25%)|(63.03%) |(69.67%)|
 
-### Result Details
+## Result Details
 
-#### Basic
+### Basic
 
 The model is prompted with the question and expected to return the answer without specifying any context. In this approach the model is forced to rely upon its parametric knowledge.
 
 - Model Input: Question
 - Expected Output: Answer
+
+![Baseline evaluation accuracy distribution](docs/assets/baseline.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
@@ -33,12 +35,14 @@ The model is prompted with the question and expected to return the answer withou
 |phi4-mini:3.8b | 144/211 |(68.25%)|
 |gemma3:4b | 128/211 |(60.66%)|
 
-#### Vector RAG: Baseline
+### Vector RAG: Baseline
 
 - Chunking Strategy: [Title Based](https://docs.unstructured.io/open-source/core-functionality/chunking#%E2%80%9Dby-title%E2%80%9D-chunking-strategy)
 - Context Retrieval Strategy: Top 3 results retrieved from vector search
 - Model Input: Question + Context
 - Expected Output: Answer
+  
+![Vector RAG baseline accuracy distribution](docs/assets/vector-rag-baseline.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
@@ -49,12 +53,14 @@ The model is prompted with the question and expected to return the answer withou
 |phi4-mini:3.8b | 133/211 | (63.03%)|
 |gemma3:4b | 123/211 | (58.29%)|
 
-#### Vector RAG: With Re-Ranking of results
+### Vector RAG: With Re-Ranking of results
 
 - Chunking Strategy: [Title Based](https://docs.unstructured.io/open-source/core-functionality/chunking#%E2%80%9Dby-title%E2%80%9D-chunking-strategy)
 - Context Retrieval Strategy: Top 3 results after reranking the results using a cross-encoder.
 - Model Input: Question + Context
 - Expected Output: Answer
+
+![Vector RAG with re-ranking accuracy distribution](docs/assets/vector-rag-with-reranking.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
@@ -65,7 +71,7 @@ The model is prompted with the question and expected to return the answer withou
 |phi4-mini:3.8b| 147/211 | (69.67%)|
 |gemma3:4b| 126/211 | (59.72%)|
 
-#### Vector RAG: With Re-Ranking of results on basic chunking with overlaps
+### Vector RAG: With Re-Ranking of results on basic chunking with overlaps
 
 - Chunking Strategy: [Basic with overlaps](https://docs.unstructured.io/open-source/core-functionality/chunking#%E2%80%9Cbasic%E2%80%9D-chunking-strategy)
 - Context Retrieval Strategy: Top 3 results after reranking the results using a cross-encoder.
