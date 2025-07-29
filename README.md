@@ -24,6 +24,8 @@ The model is prompted with the question and expected to return the answer withou
 - Model Input: Question
 - Expected Output: Answer
 
+![](docs/assets/baseline.png)
+
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
 |granite3.3:2b | 102/211 |(48.34%)|
@@ -40,6 +42,8 @@ The model is prompted with the question and expected to return the answer withou
 - Model Input: Question + Context
 - Expected Output: Answer
 
+![](docs/assets/vector-rag-baseline.png)
+
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
 |granite3.3:2b | 109/211 | (51.66%)|
@@ -55,6 +59,8 @@ The model is prompted with the question and expected to return the answer withou
 - Context Retrieval Strategy: Top 3 results after reranking the results using a cross-encoder.
 - Model Input: Question + Context
 - Expected Output: Answer
+
+![](docs/assets/vector-rag-with-reranking.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
