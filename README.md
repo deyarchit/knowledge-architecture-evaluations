@@ -24,7 +24,7 @@ The model is prompted with the question and expected to return the answer withou
 - Model Input: Question
 - Expected Output: Answer
 
-![](docs/assets/baseline.png)
+![Baseline evaluation accuracy distribution](docs/assets/baseline.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
@@ -42,7 +42,7 @@ The model is prompted with the question and expected to return the answer withou
 - Model Input: Question + Context
 - Expected Output: Answer
   
-![](docs/assets/vector-rag-baseline.png)
+![Vector RAG baseline accuracy distribution](docs/assets/vector-rag-baseline.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
@@ -60,7 +60,7 @@ The model is prompted with the question and expected to return the answer withou
 - Model Input: Question + Context
 - Expected Output: Answer
 
-![](docs/assets/vector-rag-with-reranking.png)
+![Vector RAG with re-ranking accuracy distribution](docs/assets/vector-rag-with-reranking.png)
 
 | Model | Correct Answers | Pass % |
 |----------|----------|----------|
