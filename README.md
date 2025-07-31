@@ -93,13 +93,6 @@ The model is prompted with the question and expected to return the answer withou
 |phi4-mini:3.8b | 142/211 | (67.30%) |
 |gemma3:4b | 136/211 | (64.45%) |
 
-
-## Future evaluations
-- [] Measure the impact of context rephrasing w.r.t to the input query
-- [] Measure the impact of hybrid search (combination of TF-IDF and semantic search)
-- [] Measure the impact of using smaller chunks in embeddings (< 500 chars) to increasing semantic uniqueness
-
-
 ## Runnign the evaluations
 
 Execute: `uv run evaluator` to start the evaluation process. 
@@ -143,3 +136,8 @@ gemma3:4b: 128/211 correct (60.66%)
 .
 .
 ```
+
+## Future evaluations
+- [] Measure the impact of context rephrasing w.r.t to the input query
+- [] Measure the impact of hybrid search (combination of TF-IDF and semantic search)
+- [] Measure the impact of using smaller chunks in embeddings (< 500 chars) to increasing semantic uniqueness
