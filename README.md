@@ -93,7 +93,7 @@ The model is prompted with the question and expected to return the answer withou
 |phi4-mini:3.8b | 142/211 | (67.30%) |
 |gemma3:4b | 136/211 | (64.45%) |
 
-## Runnign the evaluations
+## Running the evaluations
 
 Execute: `uv run evaluator` to start the evaluation process. 
 
@@ -126,7 +126,6 @@ qwen3:1.7b: Loaded the already existing output
 qwen3:1.7b: Generating answers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
 qwen3:1.7b: Eval completed
 granite3.3:2b: 102/211 correct (48.34%)
-gemma3n:e4b: 151/211 correct (71.56%)
 qwen3:1.7b: 125/211 correct (59.24%)
 qwen3:4b: 152/211 correct (72.04%)
 gemma3:1b: 66/211 correct (31.28%)
@@ -138,6 +137,6 @@ gemma3:4b: 128/211 correct (60.66%)
 ```
 
 ## Future evaluations
-- [] Measure the impact of context rephrasing w.r.t to the input query
-- [] Measure the impact of hybrid search (combination of TF-IDF and semantic search)
-- [] Measure the impact of using smaller chunks in embeddings (< 500 chars) to increasing semantic uniqueness
+- [ ] Measure the impact of context re-phrasing w.r.t. the input query  
+- [ ] Measure the impact of hybrid search (TF-IDF + semantic)
+- [ ] Measure the impact of using smaller embedding chunks (< 500 chars) to increase semantic uniqueness
