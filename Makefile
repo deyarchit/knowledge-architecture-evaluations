@@ -12,7 +12,8 @@ format:
 
 test:
 	@echo "Running tests..."
-	uv run pytest .
+	uv run pytest tests/
+	
 
 generate-mock-test-data:
 	@echo "Generating mock test data..."

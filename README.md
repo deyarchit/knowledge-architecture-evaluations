@@ -1,5 +1,7 @@
 ## Knowledge Evaluations for building AI Agents
 
+[![codecov](https://codecov.io/gh/deyarchit/knowledge-architecture-evaluations/graph/badge.svg?token=W19A9AUMAQ)](https://codecov.io/gh/deyarchit/knowledge-architecture-evaluations)
+
 The objective of this project is to evaluate the effectiveness of various knowledge architectures for LLM-powered AI agents. In other words, the goal is to measure the effectiveness of knowledge storage and retrieval strategies to aid the LLM vs focusing on the capabilities of the LLM itself.
 
 To perform the series of knowledge evaluations we will be questioning the LLMs on a set of multiple choice questions testing the knowledge of AP history. Since this knowledge is very foundational for functioning of LLMs, larger models with more parametric memory have internalized it already; even without any additional context models like `Gemini 2.0/2.5 Flash` are able to score `> 95%` on this question set. 
