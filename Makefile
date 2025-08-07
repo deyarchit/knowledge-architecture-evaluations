@@ -20,6 +20,6 @@ generate-mock-test-data:
 	.venv/bin/python tests/data_generator.py
 
 ci: lint test
-pr: lint format test
+pr: format lint test
 
 .PHONY: *
