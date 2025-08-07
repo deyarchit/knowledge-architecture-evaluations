@@ -32,3 +32,17 @@ dev = [
     "pytest-cov>=6.2.1",
     "ruff>=0.12.3",
 ]
+
+[tool.pytest.ini_options]
+addopts = "--cov=evaluator --cov-report xml"
+
+[tool.coverage.run]
+source = ["evaluator"]
+branch = true
+relative_files = true
+omit = [
+    ".venv/*",
+    "**/__init__.py",
+    "tests/*",
+    "**/main.py"
+]
