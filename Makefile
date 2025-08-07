@@ -12,7 +12,7 @@ format:
 
 test:
 	@echo "Running tests..."
-	uv run pytest tests/
+	uv run pytest tests/ --cov=evaluator --cov-report xml
 	
 
 generate-mock-test-data:
@@ -20,6 +20,6 @@ generate-mock-test-data:
 	.venv/bin/python tests/data_generator.py
 
 ci: lint test
-pr: lint format test
+pr: format lint test
 
 .PHONY: *

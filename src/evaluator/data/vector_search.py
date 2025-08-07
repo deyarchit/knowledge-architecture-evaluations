@@ -36,7 +36,9 @@ class VectorSearch:
     def __init__(self, config: SearchConfiguration) -> None:
         print(f"Configuring vector search with: {config}")
         self.max_results = config.max_results
-        self.embedder = CustomEmbedder(model_instance=SentenceTransformer(config.embedding_model))
+        self.embedder = CustomEmbedder(
+            model_instance=SentenceTransformer(config.embedding_model)
+        )
         self.enable_reranking = config.enable_reranking
         self.cross_encoder = CrossEncoder(config.cross_encoding_model)
 
@@ -49,7 +51,9 @@ class VectorSearch:
         )
 
         # Load chunks
-        chunk_file = get_data_path(f"processed/ap_history_concepts_{config.chunking_style}.json")
+        chunk_file = get_data_path(
+            f"processed/ap_history_concepts_{config.chunking_style}.json"
+        )
         concepts: Concepts | None = read_json_from_file(chunk_file, Concepts)
         if not concepts:
             raise RuntimeError(f"No concepts found in file: {chunk_file}")
