@@ -10,6 +10,7 @@ from evaluator.data.file_io import (
 from evaluator.utils import get_data_path
 from evaluator.llm import LLMAnswerGenerator
 from evaluator.models.qa import QACollection
+from evaluator.data.vector_search import SearchConfiguration, VectorSearch
 
 load_dotenv()
 
@@ -45,18 +46,35 @@ def main():
     )
     basic_evaluator.run_eval()
 
-    vector_rag_evaluator = vector_rag.VectorRAGEval(
-        models=model_list, strategy=vector_rag.strategy_baseline
-    )
-    vector_rag_evaluator.run_eval()
+    def vector_search_factory(config: SearchConfiguration):
+        return VectorSearch(config)
 
     vector_rag_evaluator = vector_rag.VectorRAGEval(
-        models=model_list, strategy=vector_rag.strategy_with_reranking
+        models=model_list,
+        qa_collection=qa_collection,
+        answer_generator=llm_answer_generator,
+        output_dir=evals_root,
+        vector_search_factory=vector_search_factory,
+        strategy=vector_rag.strategy_baseline,
     )
     vector_rag_evaluator.run_eval()
 
     vector_rag_evaluator = vector_rag.VectorRAGEval(
         models=model_list,
+        qa_collection=qa_collection,
+        answer_generator=llm_answer_generator,
+        output_dir=evals_root,
+        vector_search_factory=vector_search_factory,
+        strategy=vector_rag.strategy_with_reranking,
+    )
+    vector_rag_evaluator.run_eval()
+
+    vector_rag_evaluator = vector_rag.VectorRAGEval(
+        models=model_list,
+        qa_collection=qa_collection,
+        answer_generator=llm_answer_generator,
+        output_dir=evals_root,
+        vector_search_factory=vector_search_factory,
         strategy=vector_rag.strategy_with_reranking_with_basic_chunking,
     )
     vector_rag_evaluator.run_eval()

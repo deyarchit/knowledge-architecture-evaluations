@@ -11,11 +11,12 @@ from evaluator.data.file_io import (
     read_json_from_file,
     write_json_to_file,
 )
-from evaluator.data.vector_search import SearchConfiguration, VectorSearch
+from evaluator.data.vector_search import SearchConfiguration
 from evaluator.evals.scoring import score_model_outputs
-from evaluator.llm import LLMAnswerGenerator
+from evaluator.models.llm import LLMResponse
 from evaluator.models.qa import QA, QACollection, default_qa
 from evaluator.utils import get_data_path, get_normalized_model_name
+from typing import Protocol
 
 
 @dataclass
@@ -51,22 +52,49 @@ strategy_with_reranking_with_basic_chunking = Strategy(
 )
 
 
+class AnswerGenerator(Protocol):
+    def generate(
+        self, question: str, context: Optional[List[str]] = None
+    ) -> LLMResponse: ...
+
+
+class AnswerGeneratorFactory(Protocol):
+    def __call__(self, model_name: str, system_prompt: str) -> AnswerGenerator: ...
+
+
+class ContextRetriever(Protocol):
+    def query(self, query: str) -> Optional[List[str]]: ...
+
+
+class ContextRetrieverFactory(Protocol):
+    def __call__(self, config: SearchConfiguration) -> ContextRetriever: ...
+
+
 class VectorRAGEval:
     def __init__(
-        self, models: List[str], strategy: Strategy, max_questions: Optional[int] = None
+        self,
+        models: List[str],
+        qa_collection: QACollection,
+        answer_generator: AnswerGeneratorFactory,
+        vector_search_factory: ContextRetrieverFactory,
+        output_dir: Path,
+        strategy: Strategy,
+        max_questions: Optional[int] = None,
     ) -> None:
         print(f"Configuring Vector RAG with strategy: {strategy}")
         self.models = models
 
         # Load processed data
-        qa_collection: QACollection = load_ap_history_qa_set()
+        self._qa_collection = qa_collection
         self._qa_set: Dict[int, QA] = qa_collection.qa_map
 
         # Determine total number of questions to evaluate
         self.max_questions: int = max_questions or len(qa_collection.qa_map)
 
         # Dir where the eval outputs will be stored
-        self._eval_dir = Path(f"evals/vector_rag/{strategy.name}")
+        self._eval_dir = output_dir / "vector_rag" / strategy.name
+
+        self._answer_generator = answer_generator
 
         # Configure prompt for this evaluation
         self._system_prompt = """
@@ -93,7 +121,7 @@ class VectorRAGEval:
             /no_think
             """
 
-        self.vector_search = VectorSearch(strategy.vector_search_config)
+        self.vector_search = vector_search_factory(strategy.vector_search_config)
 
     def run_eval(self):
         print(f"Running {self.__class__.__name__}")
@@ -107,10 +135,10 @@ class VectorRAGEval:
         print(f"{model_name_str}: Starting evaluation")
 
         # Path for output file
-        output_file = get_data_path(f"{self._eval_dir}/{model_name_str}.json")
+        output_file = Path(f"{self._eval_dir}/{model_name_str}.json")
 
         # Init llm
-        gen = LLMAnswerGenerator(model_name, self._system_prompt)
+        gen = self._answer_generator(model_name, self._system_prompt)
 
         model_response_set: Dict[int, QA] = defaultdict(default_qa)
         # Load existing responses if any
@@ -121,20 +149,25 @@ class VectorRAGEval:
                 print(f"{model_name_str}: Loaded the already existing output")
 
         # Capture responses for unanswered questions
-        questions_to_answer = [q_number for q_number in islice(self._qa_set, self.max_questions)]
+        questions_to_answer = [
+            q_number for q_number in islice(self._qa_set, self.max_questions)
+        ]
 
         for q_number in track(
             questions_to_answer, description=f"{model_name_str}: Generating answers"
         ):
             if (
-                q_number in model_response_set and model_response_set[q_number].answer != ""
+                q_number in model_response_set
+                and model_response_set[q_number].answer != ""
             ):  # Skip if already answered
                 continue
 
             qa = self._qa_set[q_number]
             context_docs = self.vector_search.query(qa.question)
             response = gen.generate(qa.question, context_docs)
-            model_response_set[q_number] = QA(question="", answer=response.answer.upper())
+            model_response_set[q_number] = QA(
+                question="", answer=response.answer.upper()
+            )
 
         # Save updated response set
         model_response_collection = QACollection(qa_map=model_response_set)
