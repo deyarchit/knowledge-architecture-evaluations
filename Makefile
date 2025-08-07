@@ -12,7 +12,7 @@ format:
 
 test:
 	@echo "Running tests..."
-	uv run pytest tests/
+	uv run pytest tests/ --cov=evaluator --cov-report xml
 	
 
 generate-mock-test-data:
