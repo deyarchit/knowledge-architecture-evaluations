@@ -78,7 +78,7 @@ def mock_context_retriever_factory(mock_context_retriever):
 
 # Patch the external functions to avoid real file I/O and imports
 @patch("evaluator.evals.vector_rag.write_json_to_file", new=mock_write_json_to_file)
-class TestBasicEval:
+class TestVectorEval:
     def test_generate_answers_writes_to_file(
         self,
         sample_qa_collection,
