@@ -1,6 +1,9 @@
-## Knowledge Evaluations for building AI Agents
+<div align="center">
+  <a href="https://github.com/deyarchit/knowledge-architecture-evaluations/actions/workflows/python-app.yml?query=branch%3Amain"><img src="https://github.com/deyarchit/knowledge-architecture-evaluations/actions/workflows/python-app.yml/badge.svg?event=push" alt="CI"></a>
+  <a href="https://codecov.io/gh/deyarchit/knowledge-architecture-evaluations" ><img src="https://codecov.io/gh/deyarchit/knowledge-architecture-evaluations/graph/badge.svg?token=W19A9AUMAQ"/></a>
+</div>
 
-[![codecov](https://codecov.io/gh/deyarchit/knowledge-architecture-evaluations/graph/badge.svg?token=W19A9AUMAQ)](https://codecov.io/gh/deyarchit/knowledge-architecture-evaluations)
+## Knowledge Evaluations for building AI Agents
 
 The objective of this project is to evaluate the effectiveness of various knowledge architectures for LLM-powered AI agents. In other words, the goal is to measure the effectiveness of knowledge storage and retrieval strategies to aid the LLM vs focusing on the capabilities of the LLM itself.
 
